@@ -7,13 +7,13 @@
 //             zoom: zoom,
 //             disableDefaultUI: true
 //         });
-//         image = '../../img/svg-icons/marker.svg',
+//         image = '../img/svg-icons/marker.svg',
 //         marker = new google.maps.Marker({
 //             position: coordinates,
 //             map: map,
 //             icon: image
 //         });
-//         $.getJSON("../../json/map-style/map-style_colored.json", function (data) {
+//         $.getJSON("../json/map-style/map-style_colored.json", function (data) {
 //             map.setOptions({styles: data});
 //         });
 // }
@@ -56,7 +56,7 @@ var GM = {
     initMap: function () {
         var coordinates = {lat: 55.759936, lng: 37.662236},
             // popupContent = this.$popupContent.html(),
-            markerImage = '../../img/svg-icons/marker.svg',
+            markerImage = 'img/svg-icons/marker.svg',
             zoom = 15,
 
             map = new google.maps.Map(document.getElementById('map'), {
