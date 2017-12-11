@@ -1,0 +1,98 @@
+.case{
+    &-section{
+        background-color: #181818;
+        position: relative;
+    }
+    &__title{
+        margin-bottom: 53px;
+    }
+    &-item{
+        position: relative;
+        min-height: 350px;
+        display: flex;
+        align-items: flex-end;
+        &__one{
+            background: blue;
+        }
+        &__two{
+            background: aqua;
+        }
+        &__three{
+            background: red;
+        }
+        &__more{
+            background: #232323;
+            &:after{
+                content: "";
+                display: block;
+                min-height: 350px;
+                width: 100%;
+                position: absolute;
+                background: #232323;
+                top: 0;
+                right: -100%;
+            }
+        }
+    }
+    &__download{
+        width: 48px;
+        height: 40px;
+        background-color: #a96fdc;
+        position: relative;
+        text-align: center;
+        line-height: 40px;
+        display: none;
+        img{
+            width: 17px;
+            height: 21px;
+            fill: #ffffff;
+        }
+    }
+    &__link{
+        display: block;
+        transition: .7s;
+        &:hover{
+            text-decoration: none;
+            transition: .7s;
+            .case__download{
+                display: block;
+            }
+        }
+    }
+    &__text{
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        color: #ffffff;
+        padding: 6.5px 24px;
+        background-color: #181818;
+        text-align: center;
+        &-more{
+            font-size: 18px;
+            line-height: 1.33;
+            text-align: left;
+            color: #ffffff;
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            &__icon{
+                display: block;
+                width: 16px;
+                height: 20px;
+                fill: #979797;
+                position: absolute;
+                left: 24px;
+                bottom: 56px;
+            }
+        }
+    }
+}
+
+.parallax-element-1{
+    display: block;
+    // background: url(../../img/parallax-element-1.svg)no-repeat;
+    width: 134px;
+    height: 245px;
+    position: absolute;
+    left: 0;
+    top:-270px;
+}

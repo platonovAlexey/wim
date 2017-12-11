@@ -1,0 +1,102 @@
+include blocks/head-service/head
+include common/mixins
+include common/js
+
+
+body
+	.layout_center_wrapper-project
+		.top-line
+			.container-fluid
+				.row
+					.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12.align-self-center.justify-content-center
+						a(class="top-line__logo" href="/", target="_blank")
+							img(src="../img/logo-white.svg", alt="logo")
+					.col-xl-5.col-lg-6.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+						nav.nav
+							ul.nav__list
+								li.nav__item
+									a(href="about.html", class="nav__link") О нас
+								li.nav__item
+									a(href="case.html", class="nav__link nav__link-active") Кейсы
+								li.nav__item
+									a(href="laboratory.html", class="nav__link") Лаборатория
+								//- li.nav__item
+								//- 	a(href="#", class="nav__link") Карьера
+								li.nav__item
+									a(href="contact.html", class="nav__link") Контакты
+					.offset-xl-3.offset-lg-3.col-xl-2.col-lg-2.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+						a(href="#", class="submit__btn") Оставить заявку
+		.inner-wrapper-project.inner-wrapper-project__case
+			.container-fluid
+				.row
+					.offset-xl-1.offset-lg-1.col-12
+						.b-main-title.b-case__title
+							|Кейсы
+				.row
+					.offset-xl-1.offset-lg-1.col-xl-3.col-lg-3.col-md-3.col-sm-6.col-12
+						a(href="#", target="_blank", class="b-case__link")
+							.b-case__item.b-case__item-one
+								span.b-case__text Utair
+								.b-case__download
+									img(src="../img/svg-icons/case-download.svg", alt="")
+						//- .b-case__item
+					.col-xl-3.col-lg-3.col-md-3.col-sm-6.col-12
+						a(href="#", target="_blank", class="b-case__link")
+							.b-case__item.b-case__item-one
+								span.b-case__text Utair
+								.b-case__download
+									img(src="../img/svg-icons/case-download.svg", alt="")
+					.col-xl-3.col-lg-3.col-md-3.col-sm-6.col-12
+						a(href="#", target="_blank", class="b-case__link")
+							.b-case__item.b-case__item-one
+								span.b-case__text Utair
+								.b-case__download
+									img(src="../img/svg-icons/case-download.svg", alt="")
+				.row
+					.offset-xl-1.offset-lg-1.col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+						a(href="#", target="_blank", class="b-case__link")
+							.b-case__item.b-case__item-four
+								span.b-case__text Utair
+								.b-case__download
+									img(src="../img/svg-icons/case-download.svg", alt="")
+					.col-xl-3.col-lg-3.col-md-3.col-sm-6.col-12
+						.b-case__item-wrapper
+							.col-12.p-0
+								a(href="#", target="_blank", class="b-case__link")
+									.b-case__item.b-case__item-one
+										span.b-case__text Utair
+										.b-case__download
+											img(src="../img/svg-icons/case-download.svg", alt="")
+							.col-12.p-0
+								a(href="#", target="_blank", class="b-case__link")
+									.b-case__item.b-case__item-one
+										span.b-case__text Utair
+										.b-case__download
+											img(src="../img/svg-icons/case-download.svg", alt="")
+				.row
+					.offset-xl-1.offset-lg-1.col-xl-3.col-lg-3.col-md-3.col-sm-6.col-12
+						a(href="#", target="_blank", class="b-case__link")
+							.b-case__item.b-case__item-one
+								span.b-case__text Utair
+								.b-case__download
+									img(src="../img/svg-icons/case-download.svg", alt="")
+						//- .b-case__item
+					.col-xl-3.col-lg-3.col-md-3.col-sm-6.col-12
+						a(href="#", target="_blank", class="b-case__link")
+							.b-case__item.b-case__item-one
+								span.b-case__text Utair
+								.b-case__download
+									img(src="../img/svg-icons/case-download.svg", alt="")
+					.col-xl-3.col-lg-3.col-md-3.col-sm-6.col-12
+						a(href="#", target="_blank", class="b-case__link")
+							.b-case__item.b-case__item-one
+								span.b-case__text Utair
+								.b-case__download
+									img(src="../img/svg-icons/case-download.svg", alt="")
+
+
+
+
+	+footer-text()
+
+	include blocks/footer-service/footer-service

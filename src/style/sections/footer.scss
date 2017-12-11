@@ -1,0 +1,147 @@
+.footer{
+	flex: 0 0 auto;
+	position: relative;
+	padding:22px 0 37px 0;
+	background: #181818;
+
+		&-top{
+			width: 100%;
+			position: relative;
+			@include clearfix;
+			padding-bottom: 22px;
+			border-bottom: solid 2px #404040;
+		}
+		&-bottom{
+			width: 100%;
+			position: relative;
+			padding: 25px 0;
+			@include clearfix;
+		}
+		&__form{
+			&__wrapper{
+				@include clearfix;
+			}
+		}
+		&__subscribe{
+			&-text{
+				font-size: 16px;
+				line-height: 2.5;
+				text-align: left;
+				color: #ffffff;
+				margin-right: 15px;
+				float: left;
+				margin-bottom: 0;
+			}
+			&-input{
+				background: none;
+				width: 200px;
+				border: 1px solid #686868;
+				padding: 8px;
+				border-right: none;
+				&:focus{
+					color: #fff;
+					border: 1px solid #fff;
+					outline: none;
+					opacity: 1;
+					transition: .7s;
+				}
+			}
+			&-btn{
+				background: rgb(24, 24, 24);
+				color: #fff;
+				cursor: pointer;
+				padding: 8px 30px;
+				font-size: 16px;
+				line-height: 1.5;
+				text-align: center;
+				border: 1px solid rgba(169,111,220,0.9);
+				text-transform: none;
+				border-radius: 26px;
+				margin: 0px -20px;
+				&:focus{
+					background: #a96fdc;
+					outline: none;
+				}
+				&:hover{
+					color: #fff;
+					text-decoration: none;
+					box-shadow: 0 0 16px 0 rgba(169,111,220,.44);
+				}
+			}
+		}
+		&__social{
+			&__link{
+				display: flex;
+				justify-content: center;
+				width: 40px;
+				height: 40px;
+				border: solid 1px #a96fdc;
+				border-radius: 50%;
+				float: left;
+				&-tg{
+					margin-right: 16px;
+				}
+				&:focus{
+					background: #a96fdc;
+				}
+				&:hover{
+					text-decoration: none;
+					box-shadow: 0 0 16px 0 rgba(169,111,220,.44);
+				}
+				&-bottom{
+					display: block;
+					float: left;
+					&-fb{
+						width: 9px;
+						height: 18px;
+						fill: #fff;
+						margin-right: 20px;
+					}
+					&-linkedin{
+						width: 20px;
+						height: 20px;
+						fill: #fff;
+					}
+				}
+			}
+			&__icon{
+				&-tg{
+					width: 13px;
+					height: 13px;
+					fill: #fff;
+				}
+				&-fb{
+					width: 9px;
+					height: 18px;
+					fill: #fff;
+				}
+			}
+		}
+		&__phone{
+			font-size: 14px;
+			line-height: 1;
+			color: #fff;
+			text-align: right;
+			&:hover{
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+		&__copy{
+			font-size: 14px;
+			line-height: 1.71;
+			text-align: left;
+			color: #ffffff;
+			margin-bottom: 0;
+		}
+		&__email{
+			font-size: 14px;
+			line-height: 1.71;
+			text-align: right;
+			color: #a96fdc;
+			&:hover{
+				color: #a96fdc;
+				text-decoration: none;
+			}
+		}
+}

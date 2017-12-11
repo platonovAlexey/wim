@@ -1,0 +1,70 @@
+.write{
+    &-section{
+        background-color: #232323;
+        padding: 100px 0;
+        position: relative;
+    }
+    &__title{
+        margin-bottom: 65px;
+    }
+    &-form{
+        margin-bottom: 60px;
+        &__input{
+            display: block;
+            width: 100%;
+            background: none;
+            border: none;
+            font-size: 18px;
+            border-bottom: 1px solid #7e7e7e;
+            padding: 10px 0;
+            display: block;
+            float: left;
+            margin: 0 10px;
+            outline: none;
+            opacity: 0.5;
+            color: #ffffff;
+            transition: .7s;
+            margin-left: 0;
+            &:focus{
+                color: #fff;
+                border-bottom: 1px solid #fff;
+                outline: none;
+                opacity: 1;
+                transition: .7s;
+            }
+        }
+        &__btn{
+            display: block;
+            background: none;
+            color: #fff;
+            cursor: pointer;
+            min-height: 24px;
+            padding: 18px 56px;
+            line-height: 24px;
+            font-size: 24px;
+            border: 2px solid #a96fdc;
+            text-transform: none;
+            border-radius: 65px;
+            margin: 64px 0 0 0;
+            &:focus{
+                outline: none;
+                background: #a96fdc;
+            }
+            &:hover{
+                color: #fff;
+                text-decoration: none;
+                box-shadow: 0 0 16px 0 rgba(169,111,220,.44);
+            }
+        }
+    }
+}
+
+.parallax-element-2{
+	display: block;
+    // background: url(../../img/parallax-element-2.svg)no-repeat;
+    width: 210px;
+    height: 312px;
+    position: absolute;
+    right: 0;
+    top: -100%;
+}

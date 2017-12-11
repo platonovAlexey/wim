@@ -1,0 +1,98 @@
+include blocks/head-service/head
+include common/mixins
+include common/js
+
+body
+	.another_layout_center_wrapper-project
+		.top-line
+			.container-fluid
+				.row
+					.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12.align-self-center.justify-content-center
+						a(class="top-line__logo" href="/", target="_blank")
+							img(src="../img/another-logo.png", alt="logo", width="195px", height="47px")
+					.col-xl-5.col-lg-6.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+						nav.nav
+							ul.nav__list
+								li.nav__item
+									a(href="about.html", class="nav__link nav__link-inner") О нас
+								li.nav__item
+									a(href="case.html", class="nav__link nav__link-inner") Кейсы
+								li.nav__item
+									a(href="laboratory.html", class="nav__link nav__link-inner nav__link-active") Лаборатория
+								//- li.nav__item
+								//- 	a(href="#", class="nav__link nav__link-inner") Карьера
+								li.nav__item
+									a(href="contact.html", class="nav__link nav__link-inner") Контакты
+					.offset-xl-3.offset-lg-3.col-xl-2.col-lg-2.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+						a(href="#", class="submit__btn submit__btn-inner") Оставить заявку
+		.inner-wrapper-project.inner-wrapper-project__lab
+			.container-fluid
+				.row
+					.offset-xl-1.offset-lg-1.col-11
+						h1.lab__title.b-main-title
+							|Лаборатория
+				.row
+					.offset-xl-1.offset-lg-1.offset-md-1.col-xl-7.col-lg-7.col-md-8.col-sm-12.col-12
+						.lab-item
+							.lab-item__img
+								//- img(src="", alt="")
+							.lab-wrapper
+								h4.lab-item__subject
+									|Аналитика
+								a(href="laboratory-article.html" class='lab-item__title') Smartsport.com — онлайн-сервис для организации тренировочных сборов
+								p.lab-item__text
+									|Здравствуйте. Меня зовут Артем Нефедов, мне 28 лет и с января 2016 года мы c партнером работаем над проектом Smartsport.com, который автоматизирует организацию тренировочных сборов.
+								p.lab-item__date
+									|23 мая
+
+				.row
+					.offset-xl-1.offset-lg-1.offset-md-1.col-xl-7.col-lg-7.col-md-8.col-sm-12.col-12
+						.lab-item
+							.lab-item__img
+								//- img(src="", alt="")
+							.lab-wrapper
+								h4.lab-item__subject
+									|Аналитика
+								a(href="laboratory-article.html" class='lab-item__title') Smartsport.com — онлайн-сервис для организации тренировочных сборов
+								p.lab-item__text
+									|Здравствуйте. Меня зовут Артем Нефедов, мне 28 лет и с января 2016 года мы c партнером работаем над проектом Smartsport.com, который автоматизирует организацию тренировочных сборов.
+								p.lab-item__date
+									|23 мая
+
+				.row
+					.offset-xl-1.offset-lg-1.offset-md-1.col-xl-7.col-lg-7.col-md-8.col-sm-12.col-12
+						.lab-item
+							.lab-item__img
+								//- img(src="", alt="")
+							.lab-wrapper
+								h4.lab-item__subject
+									|Аналитика
+								a(href="laboratory-article.html" class='lab-item__title') Smartsport.com — онлайн-сервис для организации тренировочных сборов
+								p.lab-item__text
+									|Здравствуйте. Меня зовут Артем Нефедов, мне 28 лет и с января 2016 года мы c партнером работаем над проектом Smartsport.com, который автоматизирует организацию тренировочных сборов.
+								p.lab-item__date
+									|23 мая
+
+				.row
+					.offset-xl-1.offset-lg-1.offset-md-1.col-xl-7.col-lg-7.col-md-8.col-sm-12.col-12
+						.pagination
+							ul.pagination__list
+								li.pagination__item.pagination__item-active
+									a(href="#").pagination__link.pagination__link-active 1
+								li.pagination__item
+									a(href="#").pagination__link 2
+								li.pagination__item
+									a(href="#").pagination__link 3
+								li.pagination__item
+									a(href="#").pagination__link 4
+								li.pagination__item
+									a(href="#").pagination__link 5
+								li.pagination__item
+									a(href="#").pagination__link ...
+								li.pagination__item
+									a(href="#").pagination__link 17
+
+	+footer-text()
+
+
+	include blocks/footer-service/footer-service

@@ -1,0 +1,83 @@
+include blocks/head-service/head
+include common/mixins
+include common/js
+
+body
+	.another_layout_center_wrapper-project
+		header.header-inner
+			.top-line
+				.container-fluid
+					.row
+						.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12.align-self-center.justify-content-center
+							a(class="top-line__logo" href="/", target="_blank")
+								img(src="../img/logo-white.svg", alt="logo")
+						.col-xl-5.col-lg-6.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+							nav.nav
+								ul.nav__list
+									li.nav__item
+										a(href="about.html", class="nav__link") О нас
+									li.nav__item
+										a(href="case.html", class="nav__link") Кейсы
+									li.nav__item
+										a(href="laboratory.html", class="nav__link nav__link-active") Лаборатория
+									//- li.nav__item
+									//- 	a(href="#", class="nav__link") Карьера
+									li.nav__item
+										a(href="contact.html", class="nav__link") Контакты
+						.offset-xl-3.offset-lg-3.col-xl-2.col-lg-2.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+							a(href="#", class="submit__btn") Оставить заявку
+			.header-inner__title
+				|Smartsport.com — онлайн-сервис для
+				br
+				| организации тренировочных сборов
+		.inner-wrapper-project.inner-wrapper-project__lab
+			.container-fluid
+				.row
+					.offset-xl-2.offset-lg-2.col-8
+						article.lab-inner__article
+							p.lab-inner__article-text
+								|Французский художник Жан-Леон Жером (1824—1904) был учеником известных живописцев Поля Делароша и Шарля Глейра, от которых воспринял страсть к странствиям, исследованию обычаев разных народов. На фоне зарождения массовой культуры провинциал Жером пошёл навстречу желаниям новой публики формирующейся буржуазной Франции и стал знаменитым у салонной аристократии, познакомив её как со своими академическими портретами и мелодраматическими полотнами, так и с картинами о наполеоновских походах и жизни на арабских базарах, а также работами на мифологические и эротические темы.
+							p.lab-inner__article-text
+								|Находясь на вершине своей творческой карьеры, Жером был желанным гостем императорской семьи и профессорствовал в Школе изящных искусств.
+						h4.lab-inner__important
+							|В конце 1850-х годов Жером проявил необычайную предприимчивость в выборе 
+							br
+							|популярных исторических сюжетов, начиная от Древней Греции и Рима
+						article.lab-inner__article
+							p.lab-inner__article-text
+								|Гладиаторские бои не были придуманы римлянами, но именно в Риме их довели до совершенства, превратив их в своего рода спортивные соревнования того времени — приблизительно во II—I веках до н. э. Гладиаторы, в число которых входили осуждённые преступники и рабы, а также добровольцы, жили в специальных школах и подвергались постоянным тяжёлым тренировкам. 
+							p.lab-inner__article-text
+								|Под началом бывших гладиаторов новички практиковались на небольшой арене[en], постепенно дорастая до того, чтобы биться с другими гладиаторами. 
+							p.lab-inner__article-text
+								|Все гладиаторы делились на несколько классов, наиболее известными из которых были секуторы, ретиарии и мурмиллоны. Все они были членами гладиаторских семей, однако на большинстве публичных поединков сражались друг с другом и часто убивали своего же товарища.
+							.lab-inner__article-img
+								//- img(src="", alt="")
+							p.lab-inner__article-img__text
+								|Фото: Алексей Куденко / РИА Новости / Scanpix
+							h5.lab-inner__article-subtitle
+								|Гладиаторскую арену, а именно Колизей
+							p.lab-inner__article-text
+								|Жером впервые увидел в 1843 году во время пребывания в Риме и с тех пор неоднократно изображал на своих картинах гладиаторские поединки. Ещё в 1859 году он создал работу «Ave Caesar! Morituri te salutant», где несколько стоящих на арене гладиаторов приветствуют римского императора, но данное полотно самому художнику не очень нравилось из-за недостаточной историчности. Сохранив прежнюю композицию, перед новой работой он обратился к историческим письменным источникам, что было довольно обычной практикой для художников того времени.
+							a(href="#", class="lab-inner__article-link__back") Назад к списку
+						.lab-inner__article-bottom
+							.col-xl-6
+								.lab-inner__article-bottom-item
+									.lab-inner__article-bottom-item__img
+										//- img(src="", alt="")
+									h3.lab-inner__article-bottom-item__subject
+										|АНАЛИТИКА
+									p.lab-inner__article-bottom-item__text
+										|Smartsport.com — онлайн-сервис для организации тренировочных сборов
+							.col-xl-6
+								.lab-inner__article-bottom-item
+									.lab-inner__article-bottom-item__img
+										//- img(src="", alt="")
+									h3.lab-inner__article-bottom-item__subject
+										|АНАЛИТИКА
+									p.lab-inner__article-bottom-item__text
+										|Smartsport.com — онлайн-сервис для организации тренировочных сборов
+	
+	
+	+footer-text()
+
+	include blocks/footer-service/footer-service

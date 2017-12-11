@@ -1,0 +1,231 @@
+include blocks/head-service/head
+include common/mixins
+include common/js
+
+body
+	.another_layout_center_wrapper-project
+		.top-line
+			.container-fluid
+				.row
+					.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12.align-self-center.justify-content-center
+						a(class="top-line__logo" href="/", target="_blank")
+							img(src="../img/another-logo.png", alt="logo", width="195px", height="47px")
+					.col-xl-5.col-lg-6.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+						nav.nav
+							ul.nav__list
+								li.nav__item
+									a(href="about.html", class="nav__link nav__link-active nav__link-inner") О нас
+								li.nav__item
+									a(href="case.html", class="nav__link nav__link-inner") Кейсы
+								li.nav__item
+									a(href="laboratory.html", class="nav__link nav__link-inner") Лаборатория
+								//- li.nav__item
+								//- 	a(href="#", class="nav__link nav__link-inner") Карьера
+								li.nav__item
+									a(href="contact.html", class="nav__link nav__link-inner") Контакты
+					.offset-xl-3.offset-lg-3.col-xl-2.col-lg-2.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+						a(href="#", class="submit__btn submit__btn-inner") Оставить заявку
+		.inner-wrapper-project.inner-wrapper-project__case
+			.about-top
+				.container-fluid
+					.row
+						.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-12
+							.about__picture-header
+						.col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+							.about-wrapper
+								h1.about__title.b-main-title
+									|О нас
+								p.about__text
+									|WIM.Agency появилось в ноябре 2013 года, чтобы помогать другим компаниям c имейл-маркетингом. Основная часть команды пришла из Groupon Russia, где выстроила и автоматизировала коммуникацию через электронную почту с 20 миллионами подписчиков (на пике количество писем в месяц доходило до 200 000 миллионов).
+								p.about__text
+									|Со временем наше агентство перешло от одного только имейлинга к комплексному CRM-маркетингу, объединяющему сразу несколько каналов: email, SMS, Push, FB, Google Adwords, YouTube, Instagram. 
+								p.about__text
+									|Для повышения эффективности мы используем экспертизу и современные технологии: подбор персональных рекомендаций, автоматические поведенческие цепочки, машинное обучение Predict, жизненный цикл клиента Smart Insight и не только.
+			.about-middle
+				.container-fluid
+					.row
+						.offset-xl-3.offset-lg-3.offset-md-3.col-xl-9.col-lg-9.col-md-9.col-sm-12.col-12
+							.about-wrapper
+								article.about__tag
+									|Сейчас готовим порядка 500 рассылок в месяц, несколько сотен тысяч SMS и
+									br
+									| столько же Push-уведомлений для разных заказчиков — от поставщика
+									br
+									| канцтоваров до авиаперевозчиков. 
+						img(src="../img/parallax-element-3.svg", alt="", class="about__parallax", data-enllax-ratio=".5", data-enllax-type="foreground")
+			.about-bottom
+				.container-fluid
+					.row
+						.offset-xl-1.offset-lg-1.offset-md-1.col-12
+							h2.b-sub-title.about__subtitle
+								|Наша команда
+					.row
+						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+							a(href="", class="about-item__link")
+								.about-item
+									.about-item__img
+										.about-item__download
+											img(src="../img/svg-icons/case-download.svg", alt="") 
+									.about-item__name
+										|Евгений Кузнецов
+									.about-item__position
+										|Эксперт в Acquisition & Retention.
+						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+							a(href="", class="about-item__link")
+								.about-item
+									.about-item__img
+										.about-item__download
+											img(src="../img/svg-icons/case-download.svg", alt="")
+									.about-item__name
+										|Евгений Кузнецов
+									.about-item__position
+										|Эксперт в Acquisition & Retention. 
+						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+							a(href="", class="about-item__link")
+								.about-item
+									.about-item__img
+										.about-item__download
+											img(src="../img/svg-icons/case-download.svg", alt="")
+									.about-item__name
+										|Евгений Кузнецов
+									.about-item__position
+										|Эксперт в Acquisition & Retention. 
+						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+							a(href="", class="about-item__link")
+								.about-item
+									.about-item__team-picture
+										img(src="../img/svg-icons/case-download.svg", alt="")
+									.about-item__team-text
+										|Cтать частью 
+										br
+										|команды
+					.row
+						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+							a(href="", class="about-item__link")
+								.about-item
+									.about-item__img
+										.about-item__download
+											img(src="../img/svg-icons/case-download.svg", alt="")
+									.about-item__name
+										|Евгений Кузнецов
+									.about-item__position
+										|Эксперт в Acquisition & Retention. 
+						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+							a(href="", class="about-item__link")
+								.about-item
+									.about-item__img
+										.about-item__download
+											img(src="../img/svg-icons/case-download.svg", alt="")
+									.about-item__name
+										|Евгений Кузнецов
+									.about-item__position
+										|Эксперт в Acquisition & Retention. 
+						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+							a(href="", class="about-item__link")
+								.about-item
+									.about-item__img
+										.about-item__download
+											img(src="../img/svg-icons/case-download.svg", alt="")
+									.about-item__name
+										|Евгений Кузнецов
+									.about-item__position
+										|Эксперт в Acquisition & Retention.
+					
+				//- #modal_form
+			.my-slider-wrapper
+				span#modal_close.modal_close
+				.row
+					.col-12
+						#my-slider
+							.sp-slides
+								.sp-slide(data-height="100%")
+									.sp-slide__name
+										|Евгений Кузнецов
+									.sp-slide__position
+										|Эксперт в Acquisition & Retention
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+								.sp-slide(data-height="100%")
+									.sp-slide__name
+										|Евгений Кузнецов1
+									.sp-slide__position
+										|Эксперт в Acquisition & Retention
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+								.sp-slide(data-height="100%")
+									.sp-slide__name
+										|Евгений Кузнецов2
+									.sp-slide__position
+										|Эксперт в Acquisition & Retention
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+								.sp-slide(data-height="100%")
+									.sp-slide__name
+										|Евгений Кузнецов3
+									.sp-slide__position
+										|Эксперт в Acquisition & Retention
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+								.sp-slide(data-height="100%")
+									.sp-slide__name
+										|Евгений Кузнецов4
+									.sp-slide__position
+										|Эксперт в Acquisition & Retention
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+								.sp-slide(data-height="100%")
+									.sp-slide__name
+										|Евгений Кузнецов5
+									.sp-slide__position
+										|Эксперт в Acquisition & Retention
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+									p.sp-slide__text
+										|Любитель повтыкать в цифры и аналитику. Убеждён, что нельзя управлять тем, что нельзя измерить.
+
+							.sp-thumbnails
+								.sp-thumbnail
+									.sp-thumbnail-image-container
+										img.sp-thumbnail-image(src='http://lorempixel.com/220/220/sports/1/')
+								.sp-thumbnail
+									.sp-thumbnail-image-container
+										img.sp-thumbnail-image(src='http://lorempixel.com/220/220/sports/2/')
+								.sp-thumbnail
+									.sp-thumbnail-image-container
+										img.sp-thumbnail-image(src='http://lorempixel.com/220/220/sports/3/')
+								.sp-thumbnail
+									.sp-thumbnail-image-container
+										img.sp-thumbnail-image(src='http://lorempixel.com/220/220/sports/4/')
+								.sp-thumbnail
+									.sp-thumbnail-image-container
+										img.sp-thumbnail-image(src='http://lorempixel.com/220/220/sports/5/')
+				//- #overlay
+					
+	
+		//- .slider-pro-wrapper
+	+footer-text()
+
+
+	include blocks/footer-service/footer-service

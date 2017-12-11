@@ -1,0 +1,42 @@
+// default
+@import "helpers/variables";
+@import "helpers/px-to-em";
+@import "helpers/bootstrap-grid";
+@import "helpers/general";
+@import "helpers/mixins";
+@import "helpers/animate";
+@import "helpers/slider-pro";
+@import "helpers/owl.carousel";
+@import "helpers/owl.theme.default";
+@import "helpers/normalize";
+
+
+
+
+// screen index
+@import "screens/main/header";
+@import "screens/main/tabs";
+@import "screens/main/case";
+@import "screens/main/write";
+
+// screen case
+@import "screens/case/case-page";
+
+// screen about
+@import "screens/about/about-page";
+
+// screen laboratory
+@import "screens/laboratory/laboratory-page";
+
+// screen contact
+@import "screens/contacts/contact-page";
+
+
+
+@import "sections/goods";
+@import "sections/footer";
+
+@import "helpers/media";
+
+// sprite (подключать в каждом файле, где используются иконки)
+//@import "../img/sprites/sprite";

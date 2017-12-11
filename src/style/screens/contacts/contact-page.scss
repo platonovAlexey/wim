@@ -1,0 +1,107 @@
+#map{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gm-style-iw {
+    overflow: visible !important;
+  
+    div {
+      overflow: visible !important;
+    }
+  }
+
+.gmnoprint{
+    display: block;
+    overflow: visible !important;
+}
+
+.contact{
+    &-bg{
+        background: url(../../img/svg-icons/contact-bg.svg) no-reepat;
+        width: 594px;
+        height: 585px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+    }
+    &-info{
+        position: absolute;
+        z-index: 10000;
+        left: 120px;
+        top: 135px;
+        &__title{
+            font-size: 64px;
+            font-weight: 300;
+            line-height: 1.13;
+            text-align: left;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+        &__addres{
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: left;
+            color: #ffffff;
+            margin-bottom: 18px;
+        }
+        &__phone{
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            &:after{
+                content: "";
+                display: block;
+                width: 15px;
+                height: 17px;
+                background: url(../../img/svg-icons/phone-icon.svg) no-reepat;
+                position: absolute;
+                left: 0;
+                top: 6px;
+            }
+            &-link{
+                font-size: 14px;
+                text-align: left;
+                color: #ffffff;
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+        &__mail{
+            margin-bottom: 28px;
+            padding-left: 25px;
+            position: relative;
+            &:after{
+                content: "";
+                display: block;
+                width: 17px;
+                height: 13px;
+                background: url(../../img/svg-icons/mail-icon.svg) no-reepat;
+                position: absolute;
+                left: 0;
+                top: 6px;
+            }
+            &-link{
+                font-size: 14px;
+                text-align: left;
+                color: #ffffff;
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+        &__how{
+            &-link{
+                font-size: 16px;
+                text-align: left;
+                color: #a96fdc;
+                &:hover{
+                    color: #a96fdc;
+                }
+            }
+        }
+    }
+}
