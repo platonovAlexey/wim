@@ -1,7 +1,7 @@
 //DEFAULT STYLE//
 .top-line{
 	position: relative;
-	border-bottom: 1px solid #e7e7e7;
+	border-bottom: 1px solid rgba(231,231,231,.2);
 	@include clearfix;
 	height: 88px;
 	&__map{
@@ -127,7 +127,7 @@
 		line-height: 1.13;
 		text-align: left;
 		color: #ffffff;
-		margin-bottom: 48px;
+		margin-bottom: 62px;
 	}
 
 	&__btn{
@@ -137,6 +137,7 @@
 		padding: 16px 48px;
 		border-radius: 33px;
 		border: solid 1px #a96fdc;
+		opacity: .5;
 		// display: none;
 		&:hover{
 			background-color: #181818;
@@ -144,6 +145,7 @@
 			border: solid 1px #a96fdc;
 			color: #ffffff;
 			text-decoration: none;
+			opacity: 1;
 		}
 		&:focus{
 			border-radius: 33px;
@@ -163,7 +165,9 @@
 	color: #ffffff;
 	border-radius: 29px;
 	border: solid 1px #ffffff;
-	padding: 8px 20px;
+	padding: 7px 20px;
+	opacity: .4;
+	display: block;
 	&-inner{
 		border: solid 1px #a96fdc;
 		color: #181818;
@@ -176,6 +180,7 @@
 		border: solid 1px #a96fdc;
 		color: #ffffff;
 		text-decoration: none;
+		opacity: 1;
 	}
 	&:focus{
 		background-color: #a96fdc;

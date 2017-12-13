@@ -24,16 +24,49 @@
             width: 100%;
         }
         &-one{
-            background: url(../img/case-page/utair@2x.jpg) no-repeat;
-            // background-size: 350px 350px;
-            width: 100%;
+            background: url(../img/case-image/av.jpg) no-repeat;
+            background-size: 350px 350px;
+            height: 350px;
+        }
+        &-two{
+            background: url(../img/case-image/mr_doors.jpg) no-repeat;
+            background-size: 350px 350px;
+            height: 350px;
+        }
+        &-three{
+            background: url(../img/case-image/mvideo.jpg) no-repeat;
+            background-size: 350px 350px;
             height: 350px;
         }
         &-four{
-            background: url(../img/case-page/s-7@2x.jpg) no-repeat;
-            // background-size: 732px 732px;
-            width: 100%;
+            background: url(../img/case-image/airlines.jpg) no-repeat;
+            background-size: 732px 732px;
             height: 732px;
+        }
+        &-five{
+            background: url(../img/case-image/su_22.jpg) no-repeat;
+            background-size: 350px 350px;
+            height: 350px;
+        }
+        &-six{
+            background: url(../img/case-image/goods.jpg) no-repeat;
+            background-size: 350px 350px;
+            height: 350px;
+        }
+        &-seven{
+            background: url(../img/case-image/iqos.jpg) no-repeat;
+            background-size: 350px 350px;
+            height: 350px;
+        }
+        &-eight{
+            background: url(../img/case-image/utair.jpg) no-repeat;
+            background-size: 350px 350px;
+            height: 350px;
+        }
+        &-nine{
+            background: url(../img/case-image/airlines.jpg) no-repeat;
+            background-size: 350px 350px;
+            height: 350px;
         }
     }
     &__text{

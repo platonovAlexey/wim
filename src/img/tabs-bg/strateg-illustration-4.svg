@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="670px" height="670px" viewBox="0 0 670 670" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>illustration_4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="670" height="670"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="illustration_4">
+            <g id="Group">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g mask="url(#mask-2)" stroke="#A96FDC">
+                    <g transform="translate(249.000000, 181.000000)">
+                        <rect id="Rectangle-18" fill="none" x="7" y="7" width="382" height="578" rx="20"></rect>
+                        <rect id="Rectangle-23" fill="none" x="162" y="39" width="73" height="11" rx="5.5"></rect>
+                        <circle id="Oval" fill="none" cx="345.5" cy="44.5" r="5.5"></circle>
+                        <rect id="Rectangle-34" fill="none" x="25" y="94" width="348" height="424"></rect>
+                        <rect id="Rectangle-34" fill="#232323" fill-rule="evenodd" opacity="0.5" x="91" y="273" width="322" height="108"></rect>
+                        <rect id="Rectangle-34" fill="#232323" fill-rule="evenodd" opacity="0.200000003" x="99" y="274" width="322" height="108"></rect>
+                        <rect id="Rectangle-34" fill="#232323" fill-rule="evenodd" opacity="0.699999988" x="83" y="273" width="322" height="108"></rect>
+                        <rect id="Rectangle-34" fill="#232323" fill-rule="evenodd" x="74" y="273" width="322" height="108"></rect>
+                        <rect id="Rectangle-34" fill="#232323" fill-rule="evenodd" x="37" y="144" width="322" height="108"></rect>
+                        <path d="M3,116 L7,116 L7,179 L3,179 L3,179 C1.34314575,179 2.02906125e-16,177.656854 0,176 L0,119 L0,119 C-2.02906125e-16,117.343146 1.34314575,116 3,116 Z" id="Rectangle-35" fill="#232323" fill-rule="evenodd"></path>
+                        <path d="M338.5,-16.5 L342.5,-16.5 L342.5,23.5 L338.5,23.5 L338.5,23.5 C336.843146,23.5 335.5,22.1568542 335.5,20.5 L335.5,-13.5 L335.5,-13.5 C335.5,-15.1568542 336.843146,-16.5 338.5,-16.5 Z" id="Rectangle-35" fill="none" transform="translate(339.000000, 3.500000) rotate(90.000000) translate(-339.000000, -3.500000) "></path>
+                        <path d="M2,186 L7,186 L7,210 L2,210 L2,210 C0.8954305,210 1.3527075e-16,209.104569 0,208 L0,188 L0,188 C-1.3527075e-16,186.895431 0.8954305,186 2,186 Z" id="Rectangle-35" fill="#232323" fill-rule="evenodd"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

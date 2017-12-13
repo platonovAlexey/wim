@@ -12,13 +12,16 @@
         display: flex;
         align-items: flex-end;
         &__one{
-            background: blue;
+            background: url(../img/case-image/utair.jpg)no-repeat center center;
+            background-size: 350px 350px;
         }
         &__two{
-            background: aqua;
+            background: url(../img/case-image/mr_doors.jpg)no-repeat center center;
+            background-size: 350px 350px;
         }
         &__three{
-            background: red;
+            background: url(../img/case-image/mvideo.jpg)no-repeat center center;
+            background-size: 350px 350px;
         }
         &__more{
             background: #232323;

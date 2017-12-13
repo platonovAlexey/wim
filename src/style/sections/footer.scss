@@ -58,6 +58,7 @@
 				text-transform: none;
 				border-radius: 26px;
 				margin: 0px -20px;
+				opacity: .5;
 				&:focus{
 					background: #a96fdc;
 					outline: none;
@@ -122,6 +123,8 @@
 			line-height: 1;
 			color: #fff;
 			text-align: right;
+			display: flex;
+			justify-content: flex-end;
 			&:hover{
 				text-decoration: none;
 				color: #fff;
@@ -139,9 +142,16 @@
 			line-height: 1.71;
 			text-align: right;
 			color: #a96fdc;
+			display: flex;
+			justify-content: flex-end;
 			&:hover{
 				color: #a96fdc;
 				text-decoration: none;
 			}
 		}
+}
+
+.footer__form__wrapper-social{
+	display: flex;
+    justify-content: flex-end;
 }

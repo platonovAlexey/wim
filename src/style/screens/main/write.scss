@@ -46,11 +46,14 @@
             text-transform: none;
             border-radius: 65px;
             margin: 64px 0 0 0;
+            opacity: .5;
             &:focus{
                 outline: none;
                 background: #a96fdc;
+                
             }
             &:hover{
+                opacity: 1;
                 color: #fff;
                 text-decoration: none;
                 box-shadow: 0 0 16px 0 rgba(169,111,220,.44);
