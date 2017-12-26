@@ -12,7 +12,7 @@ mixin a(attr)
 	a()&attributes(attr)
 		block
 
-//- Хедер логотипы(белый и красный) и конопка ведущая на Юлмарт
+//- Хедер
 mixin top-line()
 	.top-line
 		.container-fluid
@@ -33,7 +33,7 @@ mixin top-line()
 							//- 	a(href="#", class="nav__link") Карьера
 							li.nav__item
 								a(href="contact.html", class="nav__link") Контакты
-				.offset-xl-3.offset-lg-3.col-xl-2.col-lg-2.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+				.offset-xl-3.offset-lg-1.col-xl-2.col-lg-3.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
 					a(href="#", class="submit__btn") Оставить заявку
 
 mixin another-top-line()
@@ -58,6 +58,14 @@ mixin another-top-line()
 								a(href="contact.html", class="nav__link nav__link-inner") Контакты
 				.offset-xl-3.offset-lg-3.col-xl-2.col-lg-2.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
 					a(href="#", class="submit__btn submit__btn-inner") Оставить заявку
+
+mixin top-line-mvideo()
+	.top-line.top-line-mvideo
+		.container-fluid
+			.row
+				.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12.align-self-center.justify-content-center
+					a(class="top-line__logo" href="index.html", target="_blank")
+						img(src="img/logo-white.svg", alt="logo")
 
 
 //- Товары
@@ -154,18 +162,18 @@ mixin grid-3()
 			
 //- Футер служебка
 mixin footer-text()
-	footer.footer.wow.slideInLeft(data-wow-delay="1s")
+	footer.footer.wow.slideInUp(data-wow-delay="1s")
 		.container-fluid
 			.footer-top
 				.row
-					.col-xl-5.col-lg-5.col-md-5.col-sm-6.col-12
+					.col-xl-5.col-lg-7.col-md-5.col-sm-6.col-12
 						.footer__form__wrapper
 							p.footer__subscribe-text
 								|Подпишитесь на рассылку
 							form(action="/", class="footer__form")
 								input(type="email", placeholder="Почта", required, class="footer__subscribe-input")
 								input(type="submit", value="Подписаться", class="footer__subscribe-btn")
-					.offset-xl-4.offset-lg-4.offset-md-2.col-xl-3.col-lg-3.col-md-5.col-sm-6.col-12
+					.offset-xl-4.offset-lg-1.offset-md-2.col-xl-3.col-lg-4.col-md-5.col-sm-6.col-12
 						.footer__form__wrapper.footer__form__wrapper-social
 							p.footer__subscribe-text
 								|Связь в мессенджерах
@@ -182,13 +190,13 @@ mixin footer-text()
 							a(href="#", target="_blank", class="footer__social__link-bottom footer__social__link-bottom-linkedin")
 								img(src="img/svg-icons/linkedin.svg", alt="", class="footer__social__icon footer__social__icon-linkedin")
 					.offset-xl-8.offset-lg-8.offset-md-6.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12
-						a(href="tel:+74955325481", class="footer__phone") +7(495)5325481
+						a(href="tel:+74955325481", class="footer__phone") +7(495)532-54-81
 			.footer-bottom.p-0
 				.row
-					.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12
+					.col-xl-2.col-lg-3.col-md-3.col-sm-6.col-12
 							p.footer__copy
 								|&copy; 2009–2017 Wim agensy
-					.offset-xl-8.offset-lg-8.offset-md-6.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12
+					.offset-xl-8.offset-lg-7.offset-md-6.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12
 						a(href="mailto:info@wim.agency", class="footer__email") info@wim.agency
 
 					

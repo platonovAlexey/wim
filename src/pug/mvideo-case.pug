@@ -1,0 +1,206 @@
+include blocks/head-service/head
+include common/mixins
+include common/js
+
+
+body
+	.layout_center_wrapper-project-case#layout_center_wrapper-project-case
+		header.mvideo-header
+			.mvideo-header-mask
+			+top-line-mvideo()
+			.mvideo__title__block
+				.mvideo__title
+					|Кейс по клиенту
+				.mvideo__logo
+					img(src="img/mvideo-case/mvideo-logo.png", alt="mvideo", width="350px", height="202px")
+			.mvideo-header__mouse
+		.mvideo-b-section.mvideo-section__client
+			.container
+				.row
+					.col-xl-4.col-lg-4.col-md-4.col-sm-5.col-12
+						h2.mvideo-b__title.mvideo-b__title-black
+							|О клиенте
+					.col-xl-8.col-lg-8.col-md-8.col-sm-7.col-12
+						p.mvideo-b__text.mvideo-b__text-black.mvideo__text-client
+							|«М.Видео» - крупнейшая розничная сеть по объемам продаж электроники и бытовой техники в России. «М.Видео» осуществляет свою деятельность с 1993 года. По состоянию на 30 июня 2016 г. сеть «М.Видео» включает 382 магазина в 162 городах Российской Федерации. Торговая площадь магазинов «М.Видео» составляет 649 тыс. м кв., общая площадь – 872 тыс. м кв.
+				.row
+					.col-xl-4.col-lg-4.col-md-4.col-sm-4.col-12
+						.mvideo-client__item
+							.mvideo-client__img
+								img(src="img/mvideo-case/mvideo-client-icon.png", alt="icon")
+							.mvideo-client__text
+								|До 
+								span 1 000 000
+								br
+								|отправляется писем в месяц
+					.col-xl-4.col-lg-4.col-md-4.col-sm-4.col-12
+						.mvideo-client__item
+							.mvideo-client__img
+								img(src="img/mvideo-case/mvideo-client-icon.png", alt="icon")
+							.mvideo-client__text
+								|До 
+								span 1 000 000 000
+								br
+								|отправляется писем в месяц
+					.col-xl-4.col-lg-4.col-md-4.col-sm-4.col-12
+						.mvideo-client__item
+							.mvideo-client__img
+								img(src="img/mvideo-case/mvideo-client-icon.png", alt="icon")
+							.mvideo-client__text
+								|Более 
+								span 100
+								br
+								|активных цепочек автоматизации
+		
+		.mvideo-b-section.mvideo-section__original-task
+			.container
+				.row
+					.col-xl-4.col-lg-4.col-md-4.col-sm-5.col-12
+						h2.mvideo-b__title.mvideo-b__title-white
+							|Изначальная
+							br
+							|задача
+					.col-xl-8.col-lg-8.col-md-8.col-sm-7.col-12
+						.mvideo-original__item.mt-1
+							.mvideo-original__item-left
+								.mvideo-original__item-left__step
+									|01
+							.mvideo-original__item-right
+								.mvideo-original__item-right__text
+									|Увеличить объем рассылок
+						.mvideo-original__item
+							.mvideo-original__item-left
+								.mvideo-original__item-left__step
+									|02
+							.mvideo-original__item-right
+								.mvideo-original__item-right__text
+									|Увеличить продуктивность
+						.mvideo-original__item
+							.mvideo-original__item-left
+								.mvideo-original__item-left__step
+									|03
+							.mvideo-original__item-right
+								.mvideo-original__item-right__text
+									|Вести мониторинг CRM активностей
+									br
+									|конкурентов на постоянной основе
+						.mvideo-original__item.mb-0
+							.mvideo-original__item-left
+								.mvideo-original__item-left__step
+									|04
+							.mvideo-original__item-right
+								.mvideo-original__item-right__text
+									|Всестороннее развитие email 
+									br
+									|коммуникации
+
+		.mvideo-b-section.mvideo-section__carried
+			.container
+				.row
+					.col-xl-4.col-lg-4.col-md-4.col-sm-5.col-12
+						h2.mvideo-b__title.mvideo-b__title-black
+							|Выполняемые
+							br
+							|задачи
+					.col-xl-8.col-lg-8.col-md-8.col-sm-7.col-12
+						ul.mvideo-b__list.mvideo-b__text-black.mvideo__text-carried
+							li.mvideo-b__list-item &#8212; полное вовлечение (удалённая проектная команда)
+							li.mvideo-b__list-item &#8212; решение задач в формате as soon as possible
+							li.mvideo-b__list-item &#8212; поддержка 24/7
+							li.mvideo-b__list-item &#8212; отлаженный механизм отрисовки, утверждения, вёрстки макетов
+							li.mvideo-b__list-item &#8212; ежеквартальный обзор конкурентов (+ рекомендации)
+							li.mvideo-b__list-item &#8212; разработки креативов
+							li.mvideo-b__list-item &#8212; аналитические исследования
+							li.mvideo-b__list-item &#8212; аналитические отчёты
+							li.mvideo-b__list-item &#8212; A/B-тесты
+
+						p.mvideo-b__text.mvideo-b__text-black.mvideo__text-carried
+							|+ любые нестандартные запросы
+
+		.mvideo-b-section.mvideo-section__mailing
+			.container
+				.row
+					.col-xl-4.col-lg-4.col-md-4.col-sm-5.col-12
+						h2.mvideo-b__title.mvideo-b__title-black.mvideo-mailing__title
+							|Рассылки
+						p.mvideo-b__text.mvideo-b__text-black
+							|Рыба текст: Было разработано
+							br
+							|более 30 шаблонов e-mail рассылок
+							br
+							|с разным типом контента.
+
+		.mvideo-b-section.mvideo-section__decision
+			.container
+				.row
+					.col-12
+						h2.mvideo-b__title.mvideo-b__title-black.mvideo-decision__title
+							|Решение WIM Agency
+				.row
+					.col-xl-5.col-lg-5.col-md-5.col-sm-5.col-12
+						.mvideo-decision-item
+							.mvideo-decision__picture
+								img(src="img/mvideo-case/mvideo-solution-team.png", alt="", width="208px", height="80px")
+							.mvideo-decision__text
+								|Собрать для клиента 
+								br
+								|продакшн-команду из дизайнера, 
+								br
+								|верстальщика и менеджера.
+					.col-xl-2.col-lg-2.col-md-2.col-sm-2
+						.mvideo-decision__arrow
+							img(src="img/mvideo-case/mvideo-solution-arr.png", alt="", width="50px", height="50px")
+					.offset-xl-2.offset-lg-2.col-xl-3.col-lg-3.col-md-5.col-sm-5.col-12
+						.mvideo-decision-item
+							.mvideo-decision__picture
+								img(src="img/mvideo-case/mvideo-solution-site.png", alt="", width="144px", height="104px")
+							.mvideo-decision__text
+								|Распределить обязанности, 
+								br
+								|прописать регламент и сроки выполнения работ.
+
+		.mvideo-b-section.mvideo-section__result
+			.container
+				.row
+					.col-xl-4.col-lg-4.col-md-4.col-sm-5.col-12
+						h2.mvideo-b__title.mvideo-b__title-white
+							|Результат
+					.col-xl-8.col-lg-8.col-md-8.col-sm-7.col-12
+						.row
+							.col-xl-6.col-lg-6.col-md-6.col-12.p-0
+								.mvideo-result__item
+									.mvideo-result__title
+										|30%
+									.mvideo-result__text
+										|увеличиние роста выручки
+										br
+										|с канала
+							.col-xl-6.col-lg-6.col-md-6.col-12
+								.mvideo-result__item
+									.mvideo-result__title
+										|3-4
+									.mvideo-result__text
+										|количество изготовляемых
+										br
+										|макетов  в день
+						.row
+							.col-xl-6.col-lg-6.col-md-6.col-12.p-0
+								.mvideo-result__item
+									.mvideo-result__title
+										|2 часа
+									.mvideo-result__text
+										|скорость вёрстки  
+							.col-xl-6.col-lg-6.col-md-6.col-12
+								.mvideo-result__item
+									.mvideo-result__title
+										|10 минут
+									.mvideo-result__text
+										|скорость ответа на запрос клиента
+							p.mvideo-result__plus
+								|Оперативная разработка и внедрение новых механик
+							p.mvideo-result__plus
+								|Масштабируемость и открытость к новым задачам
+
+
+	+footer-text()
+	include blocks/footer-service/footer-service

@@ -5,40 +5,43 @@ include common/js
 
 body
 	.layout_center_wrapper-project
-		+top-line()
-		main.header-main
-			.container-fluid
-				.row
-					.offset-xl-1.offset-lg-1.col-xl-5.col-lg-5.col-md-6.col-sm-6.col-12
-						h1.header__title
-						//- 	|CRM агентство мультиканальной
-						//- 	br
-						//- 	|b2c коммуникации
-						.header__wrap__btn.wow.slideInLeft(data-wow-delay="3s")
-							a(href="#", class="header__btn") О нашей работе
-		section.main-slider
-			.container-fluid
-				.row
-					#owl-main-slider.owl-carousel
-						div.owl-carousel__inner
-							img(src="img/company-logos/logo-1-1.png", alt="", width="169px", height="78px", class="main-slider__img")
-						div.owl-carousel__inner
-							img(src="img/company-logos/logo-2-2.png", alt="", width="169px", height="78px", class="main-slider__img")
-						div.owl-carousel__inner
-							img(src="img/company-logos/logo-3-3.png", alt="", width="169px", height="78px", class="main-slider__img")
-						div.owl-carousel__inner
-							img(src="img/company-logos/logo-4-4.png", alt="", width="169px", height="78px", class="main-slider__img")
-						div.owl-carousel__inner
-							img(src="img/company-logos/logo-5-5.png", alt="", width="169px", height="78px", class="main-slider__img")
-						div.owl-carousel__inner
-							img(src="img/company-logos/logo-6-6.png", alt="", width="169px", height="78px", class="main-slider__img")
-						div.owl-carousel__inner
-							img(src="img/company-logos/logo-7-7.png", alt="", width="169px", height="78px", class="main-slider__img")
-						div.owl-carousel__inner
-							img(src="img/company-logos/logo-8-8.png", alt="", width="169px", height="78px", class="main-slider__img")
-						div.owl-carousel__inner
-							img(src="img/company-logos/logo-9-9.png", alt="", width="169px", height="78px", class="main-slider__img")
-		section.tabbed-section.wow.slideInUp
+		.header-wrapper
+			+top-line()
+			main.header-main
+				.header-main-bg
+					img(src="img/header-logo-bg.svg", alt="")
+				.container-fluid
+					.row
+						.offset-xl-1.offset-lg-1.col-xl-5.col-lg-5.col-md-6.col-sm-6.col-12
+							h1.header__title
+							//- 	|CRM агентство мультиканальной
+							//- 	br
+							//- 	|b2c коммуникации
+							.header__wrap__btn.wow.slideInLeft(data-wow-delay="3s")
+								a(href="#", class="header__btn") О нашей работе
+			section.main-slider
+				.container-fluid
+					.row
+						#owl-main-slider.owl-carousel
+							div.owl-carousel__inner
+								img(src="img/company-logos/logo-1-1.png", alt="", width="169px", height="78px", class="main-slider__img")
+							div.owl-carousel__inner
+								img(src="img/company-logos/logo-2-2.png", alt="", width="169px", height="78px", class="main-slider__img")
+							div.owl-carousel__inner
+								img(src="img/company-logos/logo-3-3.png", alt="", width="169px", height="78px", class="main-slider__img")
+							div.owl-carousel__inner
+								img(src="img/company-logos/logo-4-4.png", alt="", width="169px", height="78px", class="main-slider__img")
+							div.owl-carousel__inner
+								img(src="img/company-logos/logo-5-5.png", alt="", width="169px", height="78px", class="main-slider__img")
+							div.owl-carousel__inner
+								img(src="img/company-logos/logo-6-6.png", alt="", width="169px", height="78px", class="main-slider__img")
+							div.owl-carousel__inner
+								img(src="img/company-logos/logo-7-7.png", alt="", width="169px", height="78px", class="main-slider__img")
+							div.owl-carousel__inner
+								img(src="img/company-logos/logo-8-8.png", alt="", width="169px", height="78px", class="main-slider__img")
+							div.owl-carousel__inner
+								img(src="img/company-logos/logo-9-9.png", alt="", width="169px", height="78px", class="main-slider__img")
+		section.tabbed-section.wow.slideInUp(data-wow-delay="1s")
 			.container-fluid
 				.row
 					.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-12
@@ -54,7 +57,7 @@ body
 							input#tab-nav-5(type='radio', name='tabs')
 							label(for='tab-nav-5') Мобайл
 							.tabs
-								.tabs__item.tabs__item-one.animated.slideInUp
+								.tabs__item.tabs__item-one.wow.slideInUp(data-wow-delay="1s")
 									.offset-xl-1.offset-lg-1.col-xl-5.col-lg-5.col-md-6.col-sm-10.col-12
 										.tabs__item__wrap
 											h2.tabs__item__title Стратегия

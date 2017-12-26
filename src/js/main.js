@@ -16,3 +16,4 @@
 //= modules/app.js
 //= modules/map.js
 //= modules/main-slider.js
+//= modules/changeBackgroundCase.js

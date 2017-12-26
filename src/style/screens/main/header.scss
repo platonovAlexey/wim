@@ -2,8 +2,16 @@
 .top-line{
 	position: relative;
 	border-bottom: 1px solid rgba(231,231,231,.2);
-	@include clearfix;
 	height: 88px;
+	@include clearfix;
+	// position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    // margin: 0 auto;
+    // width: 100%;
+	// z-index: 100;
 	&__map{
 		border-bottom: none;
 		height: 88px;
@@ -14,6 +22,10 @@
 		width: 100%;
 		z-index: 1000000;
 		line-height: 88px;
+	}
+	&-mvideo{
+		border-bottom: none;
+		background: transparent;
 	}
 	&__logo{
 		display: inline-block;
@@ -100,10 +112,23 @@
 
 .header{
 	position: relative;
+	&-wrapper{
+		position: relative;
+		height: 100vh;
+		@include clearfix;
+	}
 	&-main{
-		background: url(../img/header-logo-bg.svg) no-repeat right 50%;
-		height: 672px;
+		background: #181818;
+		// background-size: 863px 672px;
+		height: 77%;
+		// height: 672px;
 		object-fit: contain;
+		position: relative;
+		&-bg{
+			position: absolute;
+			top: -20px;
+			right: 0;
+		}
 	}
 	&-inner{
 		height: 396px;
@@ -121,7 +146,7 @@
 	}
 	
 	&__title{
-		padding-top: 179px;
+		padding-top: 150px;
 		font-size: 64px;
 		font-weight: 300;
 		line-height: 1.13;

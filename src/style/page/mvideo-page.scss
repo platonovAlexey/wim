@@ -1,0 +1,276 @@
+.mvideo{
+    &-section{
+        &__client{
+            background: #ffffff;
+        }
+        &__original-task{
+            background: #232323 url(/img/mvideo-case/mvideo-task-bg.jpg) no-repeat top right;
+            background-size: cover;
+        }
+        &__carried{
+            background: #ffffff;
+        }
+        &__mailing{
+            background: #fbfbfb url(/img/mvideo-case/mvideo-mail-list-item.png) no-repeat bottom right;
+            background-size: cover;
+            height: 740px;
+        }
+        &__decision{
+            background: #ffffff;
+        }
+        &__result{
+            background: #232323 url(/img/mvideo-case/mvideo-result-bg.jpg) no-repeat bottom right;
+            background-size: cover;
+        }
+    }
+    &-header{
+        position: relative;
+        background: #232323 url(/img/mvideo-case/mvideo-header-bg.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+        &-mask{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(95, 31, 155, 0.0);
+            // opacity: 1;
+            // display: none;
+        }
+        &__mouse{
+            background: url(/img/mvideo-case/mvideo-mouse.png);
+            width: 20px;
+            height: 30px;
+            display: block;
+            border: 0;
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            animation: up-mouse 2s infinite;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    &__title{
+        font-weight: 300;
+        text-align: center;
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 20px;
+        &__block{
+            text-align: center;
+            @include absolute__center;
+            top: 25%;
+        }
+    }
+    &__text{
+        &-client{
+            margin-bottom: 180px;
+        }
+    }
+    &-b{
+        &-section{
+            padding: 150px 0;
+        }
+        &__title{
+            font-weight: 500;
+            text-align: left;
+            font-size: 32px;
+            line-height: 1.1;
+            &-black{
+                color: #000000;
+            }
+            &-white{
+                color: #ffffff;
+            }
+        }
+        &__text{
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 300;
+            &-black{
+                color: #000000;
+            }
+            &-white{
+                color: #ffffff;
+            }
+        }
+        &__list{
+            position: relative;
+            list-style: none;
+            text-align: left;
+            &-item{
+                font-size: 20px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                color: #000000;
+                &:last-child{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    &-client{
+        &__item{
+            @include clearfix;
+            position: relative;
+            text-align: left;
+        }
+        &__img{
+            display: block;
+            margin-bottom: 20px;
+        }
+        &__text{
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.4;
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+    &-original{
+        &__item{
+            @include clearfix;
+            position: relative;
+            margin-bottom: 80px;
+            &-left{
+                float: left;
+                &__step{
+                    position: relative;
+                    font-size: 18px;
+                    font-weight: 300;
+                    text-align: center;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    background: #a96fdc;
+                    margin-right: 38px;
+                    color: #ffffff;
+                    &:before{
+                        content: "";
+                        display: block;
+                        width: 36px;
+                        height: 1px;
+                        background: rgba(255, 255, 255, .5);
+                        position: absolute;
+                        top: 20px;
+                        left: -72px;
+                    }
+                }
+            }
+            &-right{
+                float: left;
+                &__text{
+                    font-size: 20px;
+                    font-weight: 300;
+                    line-height: 2;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &-mailing{
+        &__title{
+            margin-bottom: 40px;
+        }
+    }
+    &-decision{
+        &-item{
+            position: relative;
+            text-align: left;
+        }
+        &__title{
+            margin-bottom: 50px;
+        }
+        &__picture{
+            margin-bottom: 35px;
+            text-align: left;
+            height: 144px;
+        }
+        &__arrow{
+            text-align: center;
+            margin-top: 30px;
+        }
+        &__text{
+            font-size: 18px;
+            line-height: 1.4;
+            color: #000000;
+        }
+    }
+    &-result{
+        &__item{
+            position: relative;
+            text-align: left;
+            color: #ffffff;
+            margin-bottom: 80px;
+        }
+        &__title{
+            font-size: 72px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            line-height: 1;
+            vertical-align: top;
+        }
+        &__text{
+            font-size: 20px;
+            font-weight: 300;
+        }
+        &__plus{
+            font-size: 20px;
+            font-weight: 300;
+            text-align: left;
+            color: #ffffff;
+            position: relative;
+            &:before{
+                content: "+";
+                display: block;
+                color: rgba(255, 255, 255, .5);
+                font-weight: 100;
+                font-size: 40px;
+                position: absolute;
+                top: -19px;
+                left: -52px;
+            }
+        }
+    }
+}
+
+@keyframes up-mouse {
+	0% {
+		bottom: 0;
+	}
+	10% {
+		bottom: 2.5px;
+	}
+	20% {
+		bottom: 5px;
+	}
+	30% {
+		bottom: 7.5px;
+	}
+	40% {
+		bottom: 10px;
+	}
+	50% {
+		bottom: 12.5px;
+	}
+	60% {
+		bottom: 10px;
+	}
+	70% {
+		bottom: 7.5px;
+	}
+	80% {
+		bottom: 5px;
+	}
+	90% {
+		bottom: 2.5px;
+	}
+	100% {
+		bottom: 0;
+	}
+}

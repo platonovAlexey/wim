@@ -5,11 +5,18 @@
 
 }
 
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width : 1280px) {
+	.header-main-bg{
+		right: -30%;
+	}
 }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px) {
+	.header__title{
+		font-size: 45px;
+	}
+}
 @media only screen and (max-width : 992px) {
 
 }
@@ -81,4 +88,10 @@
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
+}
+
+@media only screen and (min-width : 1600px) {
+	.header-main-bg{
+		top: 0;
+	}
 }
