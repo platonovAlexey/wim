@@ -11,9 +11,17 @@
             background: #ffffff;
         }
         &__mailing{
-            background: #fbfbfb url(/img/mvideo-case/mvideo-mail-list-item.png) no-repeat bottom right;
-            background-size: cover;
+            background: #fbfbfb;
             height: 740px;
+            position: relative;
+            &-picture{
+                display: block;
+                width: 100%;
+                height: 730px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
         }
         &__decision{
             background: #ffffff;
@@ -33,7 +41,7 @@
             width: 100%;
             height: 100%;
             background: rgba(95, 31, 155, 0.0);
-            // opacity: 1;
+            opacity: 1;
             // display: none;
         }
         &__mouse{

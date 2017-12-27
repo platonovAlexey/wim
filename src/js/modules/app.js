@@ -9,10 +9,11 @@ $(window).ready(function(){
 
 });
 
-
+// Попробывать объеденить
 $('.case-section').enllax();
 $('.write-section').enllax();
 $('.about-middle').enllax();
+$('.mvideo-section__mailing').enllax();
 
 
 //animated
