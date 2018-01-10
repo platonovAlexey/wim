@@ -1,8 +1,11 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1920px) {
+	
+}
 @media only screen and (max-width : 1600px) {
-
+	
 }
 
 @media only screen and (max-width : 1280px) {
@@ -16,9 +19,30 @@
 	.header__title{
 		font-size: 45px;
 	}
+	.mvideo-section-arrow{
+		width: 70%;
+		bottom: 269px;
+	}
+	.mvideo-section-arrow__decision{
+		width: 80%;
+	}
+	.mvideo-header{
+		height: 70vh;
+	}
 }
 @media only screen and (max-width : 992px) {
-
+	.mvideo-section-arrow{
+		width: 66%;
+	}
+	.mvideo-section-arrow__decision{
+		width: 70%;
+	}
+	.mvideo-result__title{
+		font-size: 48px;
+	}
+	.mvideo-result__text{
+		font-size: 16px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -46,10 +70,106 @@
 		animation: none !important;
 	}
 
+	.mvideo-section-arrow{
+		width: 70%;
+	}
+	.mvideo-original__item-left__step{
+		margin-right: 20px;
+	}
+	.mvideo-original__item-right__text{
+		font-size: 18px;
+	}
+
 }
 
 @media only screen and (max-width : 600px){
+	.mvideo__title__block{
+		top: 20%;
+	}
+	.mvideo__title{
+		font-size: 38px;
+	}
+	.mvideo-b-section{
+		padding: 50px 0;
+	}
+	.mvideo-b__text{
+		margin-bottom: 50px;
+	}
+	.mvideo-section-arrow, .mvideo-section-arrow__decision{
+		display: none;
+	}
+	.mvideo-client__item{
+		margin-bottom: 30px;
+	}
+	.mvideo-client__text{
+		font-size: 16px;
+	}
+	.mvideo-client__img{
+		margin-bottom: 10px;
+	}
+	.mvideo-original__item{
+		margin-bottom: 30px;
+	}
+	.mvideo-original__item-left__step{
+		margin-right: 14px;
+	}
+	.mvideo-original__item-right__text{
+		font-size: 13px;
+	}
+	.mvideo-section__mailing-picture{
+		display: none;
+	}
+	.mvideo-section__mailing{
+		min-height: 250px;
+	}
+	.mvideo-decision__title{
+		margin-bottom: 30px;
+	}
+	.mvideo-decision__arrow{
+		display: none;
+	}
+	.mvideo-result__item{
+		margin-bottom: 30px;
+	}
+	.mvideo-decision__picture{
+		display: none;
+	}
+	.mvideo-decision-item{
+		margin-bottom: 30px;
+	}
+	.mvideo-result__text{
+		padding-left: 0;
+	}
+	.mvideo-result__plus{
+		padding: 0 15px;
+	}
+	.mvideo-result__title{
+		font-size: 33px;
+		margin-bottom: 10px;
+	}
 
+
+	form.footer__form {
+		margin-bottom: 30px;
+	}
+	.footer__subscribe-input{
+		width: 150px;
+	}
+	.footer__subscribe-btn{
+		opacity: 1;
+	}
+	.footer__phone{
+		line-height: 2.2;
+	}
+	.footer__form__wrapper-social{
+		justify-content: flex-start;
+	}
+	.footer__email{
+		justify-content: flex-start;
+	}
+	.footer__subscribe-text{
+		font-size: 15px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -93,5 +213,16 @@
 @media only screen and (min-width : 1600px) {
 	.header-main-bg{
 		top: 0;
+	}
+	.mvideo-header{
+		background-size: cover;
+	}
+	.mvideo-section-arrow{
+		width: 64%;
+	}
+}
+@media only screen and (min-width : 1920px){
+	.mvideo-section-arrow{
+		width: 62%;
 	}
 }
