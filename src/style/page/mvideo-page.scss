@@ -4,7 +4,7 @@
             background: #ffffff;
         }
         &__original-task{
-            background: #232323 url(/img/mvideo-case/mvideo-task-bg.jpg) no-repeat top right;
+            background: #232323 url(../img/mvideo-case/mvideo-task-bg.jpg) no-repeat top right;
             background-size: cover;
         }
         &__carried{
@@ -25,7 +25,7 @@
             background: #ffffff;
         }
         &__result{
-            background: #232323 url(/img/mvideo-case/mvideo-result-bg.jpg) no-repeat bottom right;
+            background: #232323 url(../img/mvideo-case/mvideo-result-bg.jpg) no-repeat bottom right;
             background-size: cover;
         }
         &-arrow{
@@ -48,7 +48,7 @@
     }
     &-header{
         position: relative;
-        background: #232323 url(/img/mvideo-case/mvideo-header-bg.jpg) no-repeat;
+        background: #232323 url(../img/mvideo-case/mvideo-header-bg.jpg) no-repeat;
         // background-size: cover;
         background-position: 50% 0%;
         height: 100vh;
@@ -61,7 +61,7 @@
             // display: none;
         }
         &__mouse{
-            background: url(/img/mvideo-case/mvideo-mouse.png);
+            background: url(../img/mvideo-case/mvideo-mouse.png);
             width: 20px;
             height: 30px;
             display: block;
@@ -270,10 +270,10 @@
         &__text{
             font-size: 20px;
             font-weight: 300;
-            padding-left: 15px;
         }
         &__plus{
             font-size: 20px;
+            padding-left: 15px;
             font-weight: 300;
             text-align: left;
             color: #ffffff;

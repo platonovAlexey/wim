@@ -78,6 +78,9 @@
 			transition: opacity 0.3s, transform 0.3s;
 			transform: translateY(10px);
 		}
+		&:focus{
+			color: #a96fdc !important;
+		}
 		&-active{
 			&:after{
 				content: '';

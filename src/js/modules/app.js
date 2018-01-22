@@ -4,7 +4,8 @@ $(window).ready(function(){
 
     var typed = new Typed('.header__title', {
         strings: ['CRM агентство мультиканальной b2c коммуникации'],
-        typeSpeed: 30
+        typeSpeed: 30,
+        showCursor: false
     });
 
 });

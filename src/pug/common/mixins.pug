@@ -66,89 +66,7 @@ mixin top-line-mvideo()
 				.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12.align-self-center.justify-content-center
 					a(class="top-line__logo" href="index.html", target="_blank")
 						img(src="img/logo-white.svg", alt="logo")
-
-
-//- Товары
-mixin goods(data)
-	//- .goods__item
-	//- 	.goods__wrap__img
-	//- 		a(class="goods__picture__wrap" href= `${data.link}` target="_blank")
-	//- 			img(class="goods__picture" src=`${pathCardImgAdmin + data.id + '.jpg'}`)
-	//- 	.goods__wrap__name
-	//- 		.goods__name
-	//- 			| #{formatTitleAlter(data.title)}
-	//- 	.goods__wrap__price
-	//- 		.price__block
-	//- 			.goods__retail__price
-	//- 				| !{getProfit(data.oldPrice, data.price)}.- 
-	//- 			.goods__start__price
-	//- 				| !{getNumberFormat(data.price)}.-
-	//- 	a(class="goods__link", href=`${data.link}`) Купить
-
-	.goods-wrapper
-		.goods-head
-			a(href=`${data.link}`, class="goods-head__link",target="_blank")
-				img(src=`${pathCardImgAdmin + data.id + '.jpg'}`, alt="Товар", class="goods-head__img")
-		.goods-wrapper-name
-			.goods-head__name
-				| #{formatTitleAlter(data.title)}
-		.goods-middle
-			//- if data.oldPrice !== '' Если старая цена пустая
-			.goods-middle__price
-				.goods-middle__retail
-					| !{getNumberFormat(data.oldPrice, data.price)}.- 
-				.goods-middle__start
-					| !{getNumberFormat(data.price)}.-
-		a(href=`${data.link}`, class="goods-bottom__link") Купить
 		
-
-//- Товары с промокодом и выгодой
-mixin goods-promocode(data)
-	.goods-wrapper.goods-wrapper-promocode
-		.goods-sale
-			| Выгода 
-			br
-			span #{data.sale}
-		.goods-head
-			a(href=`${data.link}`, class="goods-head__link",target="_blank")
-				img(src=`${pathCardImgAdmin + data.id + '.jpg'}`, alt="Товар", class="goods-head__img")
-		.goods-wrapper-name
-			.goods-head__name
-				| #{formatTitleAlter(data.title)}
-		.goods-promocode
-			| Промокод: 
-			span #{data.promocode}
-		.goods-middle
-			.goods-middle__price
-				.goods-middle__retail
-					| !{getProfit(data.oldPrice, data.price)}.- 
-				.goods-middle__start
-					| !{getNumberFormat(data.price)}.-
-		a(href=`${data.link}`, class="goods-bottom__link") Купить
-		
-		
-//- Товары для аукциона
-mixin goods-auction(data)
-	.goods-wrapper.goods-wrapper-auction
-		.goods-head
-			a(href=`${data.link}`, class="goods-head__link",target="_blank")
-				img(src=`${pathCardImgAdmin + data.id + '.jpg'}`, alt="Товар", class="goods-head__img")
-		.goods-wrapper-name
-			.goods-head__name
-				| #{formatTitleAlter(data.title)}
-		.goods-middle
-			.goods-middle__line
-				.goods-middle__text
-					| Розничная цена
-				.goods-middle__retail-price
-					| !{getProfit(data.oldPrice, data.price)}.-
-			.goods-middle__line
-				.goods-middle__text
-					| Стартовая цена
-				.goods-middle__start-price
-					| !{getNumberFormat(data.price)}.-
-		a(class="goods-bottom__link", href= `${data.link}`) О товаре
-			
 
 //- Сетка по 3 товара
 mixin grid-4()
@@ -166,14 +84,14 @@ mixin footer-text()
 		.container-fluid
 			.footer-top
 				.row
-					.col-xl-5.col-lg-7.col-md-6.col-sm-6.col-12
+					.col-xl-5.col-lg-7.col-md-12.col-sm-12.col-12
 						.footer__form__wrapper
 							p.footer__subscribe-text
 								|Подпишитесь на рассылку
 							form(action="/", class="footer__form")
 								input(type="email", placeholder="Почта", required, class="footer__subscribe-input")
 								input(type="submit", value="Подписаться", class="footer__subscribe-btn")
-					.offset-xl-4.offset-lg-1.col-xl-3.col-lg-4.col-md-6.col-sm-6.col-12
+					.offset-xl-4.offset-lg-1.col-xl-3.col-lg-4.col-md-12.col-sm-12.col-12
 						.footer__form__wrapper.footer__form__wrapper-social
 							p.footer__subscribe-text
 								|Связь в мессенджерах
@@ -195,7 +113,7 @@ mixin footer-text()
 				.row
 					.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-12
 							p.footer__copy
-								|&copy; 2009–2017 Wim agensy
+								|&copy; 2009–2018 Wim agensy
 					.offset-xl-8.offset-lg-7.offset-md-5.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12
 						a(href="mailto:info@wim.agency", class="footer__email") info@wim.agency
 

@@ -12,7 +12,8 @@ $('#owl-main-slider').owlCarousel({
         },
         600:{
             items:3,
-            nav:true
+            nav:true,
+            loop:true
         },
         1000:{
             items:7,
