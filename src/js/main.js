@@ -17,3 +17,4 @@
 //= modules/map.js
 //= modules/main-slider.js
 //= modules/changeBackgroundCase.js
+//= modules/mobNav.js
