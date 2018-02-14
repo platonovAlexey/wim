@@ -11,14 +11,18 @@
     &-wrapper{
         position: relative;
         @include clearfix;
+        padding-left: 20px;
     }
     &__title{
         color: #181818;
-        margin-bottom: 30px;
+        margin-bottom: 26px;
         line-height: .7;
     }
     &__subtitle{
-        margin-bottom: 40px;
+        font-size: 48px;
+        line-height: 1.17;
+        color: #181818;
+        margin-bottom: 37px;
     }
     &__text{
         font-size: 18px;
@@ -40,9 +44,15 @@
     }
     &__tag{
         background-color: #a972d9;
-        padding: 33px 0 31px 130px;
-        color: #ffffff;
+        padding: 32px 0 32px 120px;
         position: relative;
+        &__text{
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.78;
+            text-align: left;
+            margin-bottom: 0;
+        }
         &:after{
             content: "";
             display: block;
@@ -54,6 +64,17 @@
             right: -100%;
             z-index: 0;
         }
+        &:before{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100%;
+            background-color: #a972d9;
+            position: absolute;
+            top: 0;
+            left: -100px;
+            z-index: 0;
+        }
     }
     &-middle{
         margin-bottom: 56px;
@@ -61,6 +82,12 @@
     &-item{
         position: relative;
         margin-bottom: 40px;
+        &-dn{
+            display: none;
+        }
+        &-db{
+            display: block;
+        }
         &__link{
             text-decoration: none;
             display: block;
@@ -241,7 +268,7 @@
 	// margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
 	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
 	opacity: 1; /* пoлнoстью прoзрaчнo для aнимирoвaния */
-	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	z-index: 50; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
 	padding: 20px 10px;
 }
 .sp-slides-container{

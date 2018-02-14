@@ -1,27 +1,28 @@
 .tabbed{
-    width: 100%;
-    &-section{
-        position: relative;
-        background-color: #232323;
-        height: 850px;
-        padding: 60px 0;
-    }
-    input {
-        display: none;
-    }
-    label {
-        display: block;
-        font-size: 18px;
-        color: #ffffff;
-        opacity: .5;
-        float: left;
-        padding: 12px 00px 0 0;
-        margin-right: 44px;
-        margin-bottom: 0;
-        cursor: pointer;
-        transition: background-color .5s;
-        position: relative;
-        &:after{
+	width: 100%;
+	&-section{
+		position: relative;
+		background-color: #232323;
+		height: 670px;
+		padding: 40px 0;
+	}
+	input {
+		display: none;
+	}
+	label {
+		display: block;
+		font-size: 18px;
+		color: #ffffff;
+		opacity: .5;
+		float: left;
+		padding: 12px 00px 0 0;
+		margin-right: 44px;
+		margin-bottom: 0;
+		cursor: pointer;
+		transition: background-color .5s;
+		position: relative;
+		z-index: 10;
+		&:after{
 			content: '';
 			position: absolute;
 			top: 100%;
@@ -33,126 +34,183 @@
 			transition: opacity 0.3s, transform 0.3s;
 			transform: translateY(10px);
 		}
-    }
+	}
 }
 
-    
+	
   .tabbed > label:hover:after{
-    opacity: 1;
-    transform: translateY(0px);
+	opacity: 1;
+	transform: translateY(0px);
   }
   
   .tabbed > input:checked + label {
-    font-size: 18px;
-    color: #ffffff;
-    border-bottom: 4px solid #a96fdc;
+	font-size: 18px;
+	color: #ffffff;
+	border-bottom: 4px solid #a96fdc;
   }
 
   .tabbed > input:checked + label:hover:after{
-      opacity: 1;
+	  opacity: 1;
   }
   
   .tabs {
-    clear: both;
-    &__item{
-        width: 100%;
-        position: absolute;
-        line-height: 1.4em;
-        opacity: 0;
-        transition: opacity 1s;
-        margin-top: 93px;
-        z-index: 0;
-        transform: rotateX(0deg);
-        transform-origin: top center;
-        transition: opacity .2s, transform .5s;
-        z-index: 0;
-        &__wrap{
-            opacity: .8;
-        }
-        &__picture{
-            position: absolute;
-            top: -88px;
-            right: 0;
-        }
-        &__point{
-            position: absolute;
-            top: 0px;
-            left: 50px;
-            transition: opacity 1s;
-            &-list{
-                list-style-type: none;
-                &__item{
-                    font-size: 14px;
-                    font-weight: 300;
-                    text-align: left;
-                    color: #ffffff;
-                    opacity: .3;
-                    position: relative;
-                    margin-bottom: 12px;
-                    margin-left: -5px;
-                    &:after{
-                        content: "";
-                        display: block;
-                        width: 22px;
-                        height: 1px;
-                        background-color: #828181;
-                        position: absolute;
-                        left: -60px;
-                        top: 10px;
-                    }
-                    &--active{
-                        font-size: 18px;
-                        font-weight: 300;
-                        text-align: left;
-                        color: #ffffff;
-                        background-color: #a96fdc;
-                        opacity: 1;
-                        width: 41px;
-                        height: 41px;
-                        text-align: center;
-                        line-height: 41px;
-                        margin-left: -16px;
-                        margin-bottom: 12px;
-                        &:after{
-                            display: block;
-                            width: 36px;
-                            height: 1px;
-                            background-color: #828181;
-                            left: -50px;
-                            top: 18px;
-                        }
-                    }
-                }
-            }
-        }
-        &__title{
-            font-size: 58px;
-            font-weight: 300;
-            line-height: 1.1;
-            text-align: left;
-            color: #ffffff;
-            margin-bottom: 32px;
-        }
-        &__text{
-            font-size: 18px;
-            line-height: 1.89;
-            text-align: left;
-            color: #ffffff;
-        }
-        &__list{
-            position: relative;
-            list-style-type: none;
-            &-item{
-                font-size: 18px;
-                line-height: 1.89;
-                text-align: left;
-                color: #ffffff;
-            }
-        }
-        // &-one{
-        //     background: url(../img/tabs-bg/strateg-illustration.svg)no-repeat top right;
-        // }
-    }
+	clear: both;
+	&__item{
+		width: 100%;
+		position: absolute;
+		line-height: 1.4em;
+		opacity: 0;
+		transition: opacity 1s;
+		margin-top: 70px; //93px;
+		z-index: 0;
+		transform: rotateX(0deg);
+		transform-origin: top center;
+		transition: opacity .2s, transform .5s;
+		z-index: 0;
+		&__wrap{
+			opacity: .8;
+		}
+		&__picture{
+			position: absolute;
+			top: 0px;
+			right: 0;
+			z-index: -10;
+			&-one{
+				top: -139px;
+			}
+			&-two{
+				top: -153px;
+			}
+			&-three{
+				top: -153px;
+			}
+			&-four{
+				top: -130px;
+			}
+			&-five{
+				top: -154px;
+				right: 30px;
+			}
+		}
+		&__point{
+			position: absolute;
+			top: 10px;
+			left: 50px;
+			transition: opacity 1s;
+			&-list{
+				list-style-type: none;
+				&__item{
+					font-size: 14px;
+					font-weight: 300;
+					text-align: left;
+					color: #ffffff;
+					// opacity: .3;
+					position: relative;
+					// margin-bottom: 12px;
+					margin-left: -5px;
+					&:after{
+						// content: "";
+						// display: block;
+						// width: 22px;
+						// height: 1px;
+						// background-color: #828181;
+						// position: absolute;
+						// left: -60px;
+						// top: 10px;
+					}
+					&--active{
+						// font-size: 18px;
+						// font-weight: 300;
+						// text-align: left;
+						// color: #ffffff;
+						// background-color: #a96fdc;
+						// opacity: 1;
+						// width: 41px;
+						// height: 41px;
+						// text-align: center;
+						// line-height: 41px;
+						// margin-left: -16px;
+						// margin-bottom: 20px;
+						// &:after{
+						//     display: block;
+						//     width: 36px;
+						//     height: 1px;
+						//     background-color: #828181;
+						//     left: -50px;
+						//     top: 18px;
+						// }
+					}
+				}
+				&-label{
+					padding: 0 !important;
+					margin-bottom: 14px !important;
+					margin-right: 0 !important;
+					opacity: .3 !important;
+					&:after{
+						content: "" !important;
+						display: block !important;
+						width: 22px !important;
+						height: 1px !important;
+						background-color: #828181 !important;
+						position: absolute !important;
+						left: -60px !important;
+						top: 0px !important;
+						opacity: 1 !important;
+					}
+					&--active{
+						font-size: 18px;
+						font-weight: 300;
+						text-align: left;
+						color: #ffffff;
+						background-color: #a96fdc;
+						width: 41px;
+						height: 41px;
+						text-align: center;
+						line-height: 41px;
+						margin-left: -11px;
+						margin-bottom: 20px;
+						opacity: 1 !important;
+						&:after{
+							content: "";
+							display: block !important;
+							width: 36px !important;
+							height: 1px !important;
+							background-color: #828181 !important;
+							left: -50px !important;
+							top: 10px !important;
+						}
+					}
+				}
+			}
+		}
+		&__title{
+			font-size: 58px;
+			font-weight: 300;
+			line-height: 1.1;
+			text-align: left;
+			color: #ffffff;
+			margin-bottom: 32px;
+		}
+		&__text{
+			font-size: 18px;
+			line-height: 1.89;
+			text-align: left;
+			color: #ffffff;
+		}
+		&__list{
+			position: relative;
+			list-style-type: none;
+			&-item{
+				font-size: 18px;
+				line-height: 1.89;
+				text-align: left;
+				color: #ffffff;
+			}
+		}
+		// &-one{
+		//     background: url(../img/tabs-bg/strateg-illustration.svg)no-repeat top right;
+		// }
+	}
 
 
   }
@@ -162,7 +220,7 @@
   #tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
   #tab-nav-4:checked ~ .tabs > div:nth-of-type(4),
   #tab-nav-5:checked ~ .tabs > div:nth-of-type(5){
-    transform: rotateX(0deg);
-    opacity: 1;
-    z-index: 1;
+	transform: rotateX(0deg);
+	opacity: 1;
+	z-index: 1;
   }

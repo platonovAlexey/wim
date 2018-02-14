@@ -17,55 +17,57 @@
         display: flex;
         align-items: flex-end;
         margin-bottom: 34px;
-        background-size: cover;
+        &-dn{
+            display: none;
+        }
         &-wrapper{
             position: relative;
             @include clearfix;
             width: 100%;
         }
         &-one{
-            background: url(../img/case-image/av.jpg) no-repeat;
-            background-size: 350px 350px;
+            background: url(../img/case-image/av.jpg) no-repeat center center;
+            background-size: cover;
             height: 350px;
         }
         &-two{
-            background: url(../img/case-image/mr_doors.jpg) no-repeat;
-            background-size: 350px 350px;
+            background: url(../img/case-image/mr_doors.jpg) no-repeat center center;
+            background-size: cover;
             height: 350px;
         }
         &-three{
-            background: url(../img/case-image/mvideo.jpg) no-repeat;
-            background-size: 350px 350px;
+            background: url(../img/case-image/mvideo.jpg) no-repeat center center;
+            background-size: cover;
             height: 350px;
         }
         &-four{
-            background: url(../img/case-image/airlines.jpg) no-repeat;
-            background-size: 732px 732px;
+            background: url(../img/case-image/airlines.jpg) no-repeat center center;
+            background-size: cover;
             height: 732px;
         }
         &-five{
-            background: url(../img/case-image/su_22.jpg) no-repeat;
-            background-size: 350px 350px;
+            background: url(../img/case-image/su_22.jpg) no-repeat center center;
+            background-size: cover;
             height: 350px;
         }
         &-six{
-            background: url(../img/case-image/goods.jpg) no-repeat;
-            background-size: 350px 350px;
+            background: url(../img/case-image/goods.jpg) no-repeat center center;
+            background-size: cover;
             height: 350px;
         }
         &-seven{
-            background: url(../img/case-image/iqos.jpg) no-repeat;
-            background-size: 350px 350px;
+            background: url(../img/case-image/iqos.jpg) no-repeat center center;
+            background-size: cover;
             height: 350px;
         }
         &-eight{
             background: url(../img/case-image/utair.jpg) no-repeat;
-            background-size: 350px 350px;
+            background-size: cover;
             height: 350px;
         }
         &-nine{
             background: url(../img/case-image/airlines.jpg) no-repeat;
-            background-size: 350px 350px;
+            background-size: cover;
             height: 350px;
         }
     }

@@ -12,7 +12,7 @@ body
 					img(src="img/header-logo-bg.svg", alt="")
 				.container-fluid
 					.row
-						.offset-xl-1.offset-lg-1.col-xl-5.col-lg-5.col-md-6.col-sm-12.col-12
+						.offset-xl-1.offset-lg-1.col-xl-5.col-lg-7.col-md-8.col-sm-12.col-12
 							h1.header__title
 							//- 	|CRM агентство мультиканальной
 							//- 	br
@@ -63,60 +63,80 @@ body
 											h2.tabs__item__title Стратегия
 											p.tabs__item__text
 												| Предоставляем консалтинговые, стратегические  и исследовательские работы по CRM-маркетингу с глубокой аналитической составляющей. Проводим подробное исследование конкурентов, выявляем новые тренды и используем их в управлении отношениями с клиентами. 
-									.tabs__item__picture
+									.tabs__item__picture.tabs__item__picture-one
 										img(src="img/tabs-bg/strateg-illustration-1.svg", alt="")
 									.tabs__item__point
 										ul.tabs__item__point-list
-											li.tabs__item__point-list__item.tabs__item__point-list__item--active 01
-											li.tabs__item__point-list__item 02
-											li.tabs__item__point-list__item 03
-											li.tabs__item__point-list__item 04
-											li.tabs__item__point-list__item 05
+											li.tabs__item__point-list__item
+												label(for='tab-nav-1', class="tabs__item__point-list-label tabs__item__point-list-label--active") 01
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-2', class="tabs__item__point-list-label") 02
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-3', class="tabs__item__point-list-label") 03
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-4', class="tabs__item__point-list-label") 04
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-5', class="tabs__item__point-list-label") 05
 								.tabs__item.tabs__item-two.animated.slideInUp
 									.offset-xl-1.offset-lg-1.col-xl-5.col-lg-5.col-md-7.col-sm-7.col-12
 										.tabs__item__wrap
 											h2.tabs__item__title Мультиканальная коммуникация
 											p.tabs__item__text
 												| Внедряем системы персонального общения с клиентами. Подбираем релевантные каналы. Не навязываем дорогие инструменты без необходимости. Улучшаем результаты с помощью технологий машинного обучения, подбора персональных рекомендаций и отслеживания жизненного цикла клиента.
-									.tabs__item__picture
+									.tabs__item__picture.tabs__item__picture-two
 										img(src="img/tabs-bg/strateg-illustration-2.svg", alt="")
 									.tabs__item__point
 										ul.tabs__item__point-list
-											li.tabs__item__point-list__item 01
-											li.tabs__item__point-list__item.tabs__item__point-list__item--active 02
-											li.tabs__item__point-list__item 03
-											li.tabs__item__point-list__item 04
-											li.tabs__item__point-list__item 05
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-1', class="tabs__item__point-list-label") 01
+											li.tabs__item__point-list__item
+												label(for='tab-nav-2', class="tabs__item__point-list-label tabs__item__point-list-label--active") 02
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-3', class="tabs__item__point-list-label") 03
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-4', class="tabs__item__point-list-label") 04
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-5', class="tabs__item__point-list-label") 05
 								.tabs__item.tabs__item-three.animated.slideInUp
 									.offset-xl-1.offset-lg-1.col-xl-5.col-lg-5.col-md-7.col-sm-7.col-12
 										.tabs__item__wrap
 											h2.tabs__item__title Производство полного цикла
 											p.tabs__item__text
 												| Изучаем ваш бизнес и пишем сценарии коммуникации с пользователями по подходящим каналам и в нужное время. Превращаем потенциальных покупателей в реальных, а тех, кто уже что-то приобрёл, стимулируем делать повторные покупки. Всю рутинную работу мы берём на себя, гарантируя оперативность в качественном решении задач.
-									.tabs__item__picture
+									.tabs__item__picture.tabs__item__picture-three
 										img(src="img/tabs-bg/strateg-illustration-3.svg", alt="")
 									.tabs__item__point
 										ul.tabs__item__point-list
-											li.tabs__item__point-list__item 01
-											li.tabs__item__point-list__item 02
-											li.tabs__item__point-list__item.tabs__item__point-list__item--active 03
-											li.tabs__item__point-list__item 04
-											li.tabs__item__point-list__item 05
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-1', class="tabs__item__point-list-label") 01
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-2', class="tabs__item__point-list-label") 02
+											li.tabs__item__point-list__item
+												label(for='tab-nav-3', class="tabs__item__point-list-label tabs__item__point-list-label--active") 03
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-4', class="tabs__item__point-list-label") 04
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-5', class="tabs__item__point-list-label") 05
 								.tabs__item.tabs__item-four.animated.slideInUp
 									.offset-xl-1.offset-lg-1.col-xl-5.col-lg-5.col-md-7.col-sm-7.col-12
 										.tabs__item__wrap
 											h2.tabs__item__title Проектные работы
 											p.tabs__item__text
 												| Изучаем ваш бизнес и пишем сценарии коммуникации с пользователями по подходящим каналам и в нужное время. Превращаем потенциальных покупателей в реальных, а тех, кто уже что-то приобрёл, стимулируем делать повторные покупки. Всю рутинную работу мы берём на себя, гарантируя оперативность в качественном решении задач. 
-									.tabs__item__picture
+									.tabs__item__picture.tabs__item__picture-four
 										img(src="img/tabs-bg/strateg-illustration-5.svg", alt="")
 									.tabs__item__point
 										ul.tabs__item__point-list
-											li.tabs__item__point-list__item 01
-											li.tabs__item__point-list__item 02
-											li.tabs__item__point-list__item 03
-											li.tabs__item__point-list__item.tabs__item__point-list__item--active 04
-											li.tabs__item__point-list__item 05
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-1', class="tabs__item__point-list-label") 01
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-2', class="tabs__item__point-list-label") 02
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-3', class="tabs__item__point-list-label") 03
+											li.tabs__item__point-list__item
+												label(for='tab-nav-4', class="tabs__item__point-list-label tabs__item__point-list-label--active") 04
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-5', class="tabs__item__point-list-label") 05
 								.tabs__item.tabs__item-five.animated.slideInUp
 									.offset-xl-1.offset-lg-1.col-xl-5.col-lg-5.col-md-7.col-sm-7.col-12
 										.tabs__item__wrap
@@ -128,15 +148,20 @@ body
 												li.tabs__item__list-item &#8212; Ведение кампаний push-сообщений
 												li.tabs__item__list-item &#8212; Управление рекламы в FB / Google в связке с реакцией на рассылки
 												li.tabs__item__list-item &#8212; Автоматические диалоги в FB c дальнейшей коммуникацией по другим каналам
-									.tabs__item__picture
+									.tabs__item__picture.tabs__item__picture-five
 										img(src="img/tabs-bg/strateg-illustration-4.svg", alt="")
 									.tabs__item__point
 										ul.tabs__item__point-list
-											li.tabs__item__point-list__item 01
-											li.tabs__item__point-list__item 02
-											li.tabs__item__point-list__item 03
-											li.tabs__item__point-list__item 04
-											li.tabs__item__point-list__item.tabs__item__point-list__item--active 05							
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-1', class="tabs__item__point-list-label") 01
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-2', class="tabs__item__point-list-label") 02
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-3', class="tabs__item__point-list-label") 03
+											li.tabs__item__point-list__item 
+												label(for='tab-nav-4', class="tabs__item__point-list-label") 04
+											li.tabs__item__point-list__item
+												label(for='tab-nav-2', class="tabs__item__point-list-label tabs__item__point-list-label--active") 05
 		section.case-section.b-section-main.wow.slideInUp(data-wow-delay="1s")
 			img(src="img/parallax-element-1.svg", alt="", class="parallax-element-1", data-enllax-ratio=".5", data-enllax-type="foreground")
 			.container-fluid
@@ -164,7 +189,7 @@ body
 								.case__download
 									img(src="img/svg-icons/case-download.svg", alt="")
 					.col-xl-2.col-lg-2.col-md-4.col-sm-4.col-12
-						a(href="case.html", target="_blank", class="case__link")
+						a(href="case.html", target="_blank", class="case__link case__link-more")
 							.case-item.case-item__more
 								.case__text-more__icon
 									img(src="img/svg-icons/case-more-icon.svg", alt="")
@@ -183,7 +208,7 @@ body
 								.col-xl-3.col-lg-3.col-md-4.col-sm-4.col-12
 									input(type="text", class="write-form__input", required, placeholder="Ваше имя")
 								.col-xl-3.col-lg-3.col-md-4.col-sm-4.col-12
-									input(type="number", class="write-form__input", required, placeholder="Телефон")
+									input(type="text", class="write-form__input", required, placeholder="Телефон")
 								.col-xl-3.col-lg-3.col-md-4.col-sm-4.col-12
 									input(type="email", class="write-form__input", required, placeholder="Почта")
 							.row

@@ -8,10 +8,10 @@ body
 			.top-line
 				.container-fluid
 					.row
-						.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12.align-self-center.justify-content-center
+						.col-xl-2.col-lg-2.col-md-3.col-sm-10.col-10.align-self-center.justify-content-center.push-md-1.push-lg-0.push-2.push-xl-0.push-sm-2
 							a(class="top-line__logo" href="index.html", target="_blank")
 								img(src="img/logo-white.svg", alt="logo")
-						.col-xl-5.col-lg-6.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+						.col-xl-5.col-lg-6.col-md-1.col-sm-2.col-2.align-self-center.justify-content-center.pull-md-3.pull-lg-0.pull-10.pull-xl-0
 							nav.nav
 								ul.nav__list
 									li.nav__item
@@ -19,12 +19,17 @@ body
 									li.nav__item
 										a(href="case.html", class="nav__link") Кейсы
 									li.nav__item
-										a(href="laboratory.html", class="nav__link nav__link-active") Лаборатория
+										a(href="laboratory.html", class="nav__link") Лаборатория
 									//- li.nav__item
 									//- 	a(href="#", class="nav__link") Карьера
 									li.nav__item
 										a(href="contact.html", class="nav__link") Контакты
-						.offset-xl-3.offset-lg-3.col-xl-2.col-lg-2.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+							nav.nav__mob
+								.nav__mob__item
+								.nav__mob__item
+								.nav__mob__item
+								.nav__mob__item-close X
+						.offset-xl-3.offset-lg-1.offset-md-4.col-xl-2.col-lg-3.col-md-4.align-self-center.justify-content-center.d-mobile-none
 							a(href="#", class="submit__btn") Оставить заявку
 			.header-inner__title
 				|Smartsport.com — онлайн-сервис для
@@ -33,7 +38,7 @@ body
 		.inner-wrapper-project.inner-wrapper-project__lab
 			.container-fluid
 				.row
-					.offset-xl-2.offset-lg-2.col-8
+					.offset-xl-2.offset-lg-2.col-xl-8.col-lg-8.col-md-12.col-sm-12.col-12
 						article.lab-inner__article
 							p.lab-inner__article-text
 								|Французский художник Жан-Леон Жером (1824—1904) был учеником известных живописцев Поля Делароша и Шарля Глейра, от которых воспринял страсть к странствиям, исследованию обычаев разных народов. На фоне зарождения массовой культуры провинциал Жером пошёл навстречу желаниям новой публики формирующейся буржуазной Франции и стал знаменитым у салонной аристократии, познакомив её как со своими академическими портретами и мелодраматическими полотнами, так и с картинами о наполеоновских походах и жизни на арабских базарах, а также работами на мифологические и эротические темы.
@@ -60,22 +65,23 @@ body
 								|Жером впервые увидел в 1843 году во время пребывания в Риме и с тех пор неоднократно изображал на своих картинах гладиаторские поединки. Ещё в 1859 году он создал работу «Ave Caesar! Morituri te salutant», где несколько стоящих на арене гладиаторов приветствуют римского императора, но данное полотно самому художнику не очень нравилось из-за недостаточной историчности. Сохранив прежнюю композицию, перед новой работой он обратился к историческим письменным источникам, что было довольно обычной практикой для художников того времени.
 							a(href="#", class="lab-inner__article-link__back") Назад к списку
 						.lab-inner__article-bottom
-							.col-xl-6
-								.lab-inner__article-bottom-item
-									.lab-inner__article-bottom-item__img
-										//- img(src="", alt="")
-									h3.lab-inner__article-bottom-item__subject
-										|АНАЛИТИКА
-									p.lab-inner__article-bottom-item__text
-										|Smartsport.com — онлайн-сервис для организации тренировочных сборов
-							.col-xl-6
-								.lab-inner__article-bottom-item
-									.lab-inner__article-bottom-item__img
-										//- img(src="", alt="")
-									h3.lab-inner__article-bottom-item__subject
-										|АНАЛИТИКА
-									p.lab-inner__article-bottom-item__text
-										|Smartsport.com — онлайн-сервис для организации тренировочных сборов
+							.row
+								.col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+									.lab-inner__article-bottom-item
+										.lab-inner__article-bottom-item__img
+											//- img(src="", alt="")
+										h3.lab-inner__article-bottom-item__subject
+											|АНАЛИТИКА
+										p.lab-inner__article-bottom-item__text
+											|Smartsport.com — онлайн-сервис для организации тренировочных сборов
+								.col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+									.lab-inner__article-bottom-item
+										.lab-inner__article-bottom-item__img
+											//- img(src="", alt="")
+										h3.lab-inner__article-bottom-item__subject
+											|АНАЛИТИКА
+										p.lab-inner__article-bottom-item__text
+											|Smartsport.com — онлайн-сервис для организации тренировочных сборов
 	
 	
 	+footer-text()

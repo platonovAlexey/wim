@@ -4,34 +4,37 @@ include common/js
 
 body
 	.another_layout_center_wrapper-project
-		.top-line
+		.top-line.top-line__about
 			.container-fluid
 				.row
-					.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12.align-self-center.justify-content-center
+					.col-xl-2.col-lg-2.col-md-3.col-sm-10.col-10.align-self-center.justify-content-center.push-md-1.push-lg-0.push-2.push-xl-0.push-sm-2
 						a(class="top-line__logo" href="index.html", target="_blank")
 							img(src="img/another-logo.png", alt="logo", width="195px", height="47px")
-					.col-xl-5.col-lg-6.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+					.col-xl-5.col-lg-6.col-md-1.col-sm-2.col-2.align-self-center.justify-content-center.pull-md-3.pull-lg-0.pull-10.pull-xl-0
 						nav.nav
 							ul.nav__list
 								li.nav__item
-									a(href="about.html", class="nav__link nav__link-active nav__link-inner") О нас
+									a(href="about.html", class="nav__link nav__link-inner") О нас
 								li.nav__item
 									a(href="case.html", class="nav__link nav__link-inner") Кейсы
 								li.nav__item
 									a(href="laboratory.html", class="nav__link nav__link-inner") Лаборатория
-								//- li.nav__item
-								//- 	a(href="#", class="nav__link nav__link-inner") Карьера
 								li.nav__item
 									a(href="contact.html", class="nav__link nav__link-inner") Контакты
-					.offset-xl-3.offset-lg-3.col-xl-2.col-lg-2.col-md-5.col-sm-6.col-12.align-self-center.justify-content-center
+						nav.nav__mob
+							.nav__mob__item.nav__mob__item--another
+							.nav__mob__item.nav__mob__item--another
+							.nav__mob__item.nav__mob__item--another
+							.nav__mob__item-close.nav__mob__item-close--another X
+					.offset-xl-3.offset-lg-1.offset-md-4.col-xl-2.col-lg-3.col-md-4.align-self-center.justify-content-center.d-mobile-none
 						a(href="#", class="submit__btn submit__btn-inner") Оставить заявку
 		.inner-wrapper-project.inner-wrapper-project__case
 			.about-top
 				.container-fluid
 					.row
-						.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-12
+						.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-12.about-p-0
 							.about__picture-header
-						.col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+						.col-xl-6.col-lg-6.col-md-8.col-sm-12.col-12
 							.about-wrapper
 								h1.about__title.b-main-title
 									|О нас
@@ -47,11 +50,8 @@ body
 						.offset-xl-3.offset-lg-3.offset-md-3.col-xl-9.col-lg-9.col-md-9.col-sm-12.col-12
 							.about-wrapper
 								article.about__tag
-									|Сейчас готовим порядка 500 рассылок в месяц, несколько сотен тысяч SMS и
-									br
-									| столько же Push-уведомлений для разных заказчиков — от поставщика
-									br
-									| канцтоваров до авиаперевозчиков. 
+									p.about__tag__text
+										|Сейчас готовим порядка 500 рассылок в месяц, несколько сотен тысяч SMS и столько же Push-уведомлений для разных заказчиков — от поставщика канцтоваров до авиаперевозчиков. 
 						img(src="img/parallax-element-3.svg", alt="", class="about__parallax", data-enllax-ratio=".5", data-enllax-type="foreground")
 			.about-bottom
 				.container-fluid
@@ -60,7 +60,7 @@ body
 							h2.b-sub-title.about__subtitle
 								|Наша команда
 					.row
-						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+						.offset-xl-1.offset-lg-1.col-xl-2.col-lg-2.col-md-4.col-sm-6.col-12
 							a(href="", class="about-item__link")
 								.about-item
 									.about-item__img
@@ -70,7 +70,7 @@ body
 										|Евгений Кузнецов
 									.about-item__position
 										|Эксперт в Acquisition & Retention.
-						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+						.offset-xl-1.offset-lg-1.col-xl-2.col-lg-2.col-md-4.col-sm-6.col-12
 							a(href="", class="about-item__link")
 								.about-item
 									.about-item__img
@@ -80,7 +80,7 @@ body
 										|Евгений Кузнецов
 									.about-item__position
 										|Эксперт в Acquisition & Retention. 
-						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+						.offset-xl-1.offset-lg-1.col-xl-2.col-lg-2.col-md-4.col-sm-6.col-12
 							a(href="", class="about-item__link")
 								.about-item
 									.about-item__img
@@ -90,7 +90,7 @@ body
 										|Евгений Кузнецов
 									.about-item__position
 										|Эксперт в Acquisition & Retention. 
-						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+						.offset-xl-1.offset-lg-1.col-xl-2.col-lg-2.col-md-4.col-sm-6.col-12.about-item-db
 							a(href="", class="about-item__link")
 								.about-item
 									.about-item__team-picture
@@ -100,7 +100,7 @@ body
 										br
 										|команды
 					.row
-						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+						.offset-xl-1.offset-lg-1.col-xl-2.col-lg-2.col-md-4.col-sm-6.col-12
 							a(href="", class="about-item__link")
 								.about-item
 									.about-item__img
@@ -110,7 +110,7 @@ body
 										|Евгений Кузнецов
 									.about-item__position
 										|Эксперт в Acquisition & Retention. 
-						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+						.offset-xl-1.offset-lg-1.col-xl-2.col-lg-2.col-md-4.col-sm-6.col-12
 							a(href="", class="about-item__link")
 								.about-item
 									.about-item__img
@@ -120,7 +120,7 @@ body
 										|Евгений Кузнецов
 									.about-item__position
 										|Эксперт в Acquisition & Retention. 
-						.offset-xl-1.offset-lg-1.offset-md-1.col-xl-2.col-lg-2.col-md-2.col-sm-12.col-12
+						.offset-xl-1.offset-lg-1.col-xl-2.col-lg-2.col-md-4.col-sm-6.col-12
 							a(href="", class="about-item__link")
 								.about-item
 									.about-item__img
@@ -130,6 +130,15 @@ body
 										|Евгений Кузнецов
 									.about-item__position
 										|Эксперт в Acquisition & Retention.
+						.col-md-4.col-sm-6.col-12.about-item-dn
+							a(href="", class="about-item__link")
+								.about-item
+									.about-item__team-picture
+										img(src="img/svg-icons/case-download.svg", alt="")
+									.about-item__team-text
+										|Cтать частью 
+										br
+										|команды
 					
 				//- #modal_form
 			.my-slider-wrapper

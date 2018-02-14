@@ -17,7 +17,7 @@ mixin top-line()
 	.top-line
 		.container-fluid
 			.row
-				.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-10.align-self-center.justify-content-center.push-md-1.push-lg-0.push-2.push-xl-0
+				.col-xl-2.col-lg-2.col-md-3.col-sm-10.col-10.align-self-center.justify-content-center.push-md-1.push-lg-0.push-2.push-xl-0.push-sm-2
 					a(class="top-line__logo" href="index.html", target="_blank")
 						img(src="img/logo-white.svg", alt="logo")
 				.col-xl-5.col-lg-6.col-md-1.col-sm-2.col-2.align-self-center.justify-content-center.pull-md-3.pull-lg-0.pull-10.pull-xl-0
@@ -38,7 +38,7 @@ mixin top-line()
 						.nav__mob__item
 						.nav__mob__item
 						.nav__mob__item-close X
-				.offset-xl-3.offset-lg-1.offset-md-5.col-xl-2.col-lg-3.col-md-3.col-sm-6.col-12.align-self-center.justify-content-center.d-mobile-none
+				.offset-xl-3.offset-lg-1.offset-md-4.col-xl-2.col-lg-3.col-md-4.align-self-center.justify-content-center.d-mobile-none
 					a(href="#", class="submit__btn") Оставить заявку
 
 mixin another-top-line()
@@ -89,14 +89,14 @@ mixin footer-text()
 		.container-fluid
 			.footer-top
 				.row
-					.col-xl-5.col-lg-7.col-md-12.col-sm-12.col-12
+					.col-xl-6.col-lg-7.col-md-12.col-sm-12.col-12
 						.footer__form__wrapper
 							p.footer__subscribe-text
 								|Подпишитесь на рассылку
 							form(action="/", class="footer__form")
 								input(type="email", placeholder="Почта", required, class="footer__subscribe-input")
 								input(type="submit", value="Подписаться", class="footer__subscribe-btn")
-					.offset-xl-4.offset-lg-1.col-xl-3.col-lg-4.col-md-12.col-sm-12.col-12
+					.offset-xl-2.offset-lg-1.col-xl-4.col-lg-4.col-md-12.col-sm-12.col-12
 						.footer__form__wrapper.footer__form__wrapper-social
 							p.footer__subscribe-text
 								|Связь в мессенджерах
@@ -106,13 +106,13 @@ mixin footer-text()
 								img(src="img/svg-icons/fb.svg", alt="", class="footer__social__icon.footer__social__icon-fb")
 			.footer-bottom
 				.row
-					.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6
+					.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12
 						.footer__form__wrapper
 							a(href="#", target="_blank", class="footer__social__link-bottom footer__social__link-bottom-fb")
 								img(src="img/svg-icons/fb.svg", alt="", class="footer__social__icon footer__social__icon-fb")
 							a(href="#", target="_blank", class="footer__social__link-bottom footer__social__link-bottom-linkedin")
 								img(src="img/svg-icons/linkedin.svg", alt="", class="footer__social__icon footer__social__icon-linkedin")
-					.offset-xl-8.offset-lg-8.offset-md-6.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-6
+					.offset-xl-8.offset-lg-8.offset-md-6.col-xl-2.col-lg-2.col-md-3.col-sm-6.col-12
 						a(href="tel:+74955325481", class="footer__phone") +7(495)532-54-81
 			.footer-bottom.p-0
 				.row

@@ -2,6 +2,7 @@
     &-section{
         background-color: #181818;
         position: relative;
+        padding: 100px 0;
     }
     &__title{
         margin-bottom: 53px;
@@ -13,15 +14,15 @@
         align-items: flex-end;
         &__one{
             background: url(../img/case-image/utair.jpg)no-repeat center center;
-            background-size: 350px 350px;
+            background-size: cover;
         }
         &__two{
             background: url(../img/case-image/mr_doors.jpg)no-repeat center center;
-            background-size: 350px 350px;
+            background-size: cover;
         }
         &__three{
             background: url(../img/case-image/mvideo.jpg)no-repeat center center;
-            background-size: 350px 350px;
+            background-size: cover;
         }
         &__more{
             background: #232323;
@@ -34,6 +35,9 @@
                 background: #232323;
                 top: 0;
                 right: -100%;
+                &:hover{
+                    background: #2f2f2f;
+                }
             }
         }
     }
@@ -54,6 +58,7 @@
     &__link{
         display: block;
         transition: .7s;
+
         &:hover{
             text-decoration: none;
             transition: .7s;
@@ -76,7 +81,7 @@
             color: #ffffff;
             position: absolute;
             left: 24px;
-            bottom: 24px;
+            bottom: 10px;
             &__icon{
                 display: block;
                 width: 16px;
@@ -98,4 +103,8 @@
     position: absolute;
     left: 0;
     top:-350px;
+}
+
+.case__link-more:hover .case-item__more, .case__link-more:hover .case-item__more:after{
+    background: #2f2f2f;
 }

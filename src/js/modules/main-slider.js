@@ -1,6 +1,6 @@
 $('#owl-main-slider').owlCarousel({
     loop:true,
-    margin:10,
+    margin:5,
     pagination: false,
     autoplay:true,
     autoplayTimeout:5000,
@@ -11,6 +11,11 @@ $('#owl-main-slider').owlCarousel({
             nav:true
         },
         600:{
+            items:2,
+            nav:true,
+            loop:true
+        },
+        992:{
             items:3,
             nav:true,
             loop:true
