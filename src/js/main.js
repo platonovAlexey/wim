@@ -7,6 +7,8 @@
 //= libs/jquery.enllax.min.js
 //= libs/wow.min.js
 //= libs/jquery.sliderPro.js
+//= libs/jquery.maskedinput-1.2.2.js
+//= libs/jquery.validate.min.js
 
 
 
@@ -18,3 +20,4 @@
 //= modules/main-slider.js
 //= modules/changeBackgroundCase.js
 //= modules/mobNav.js
+//= modules/validateForm.js

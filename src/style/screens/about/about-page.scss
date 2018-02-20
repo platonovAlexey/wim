@@ -131,21 +131,21 @@
             right: -20px;
             display: none;
             img{
-                width: 17px;
-                height: 21px;
+                width: 15px;
+                height: 17px;
                 fill: #fff;
-                transform: rotate(-90deg);
+                // transform: rotate(-90deg);
             }
         }
         &__team{
             text-align: left;
             &-picture{
-                width: 48px;
-                height: 40px;
+                width: 50px;
+                height: 50px;
                 background-color: #a96fdc;
                 position: relative;
                 text-align: center;
-                line-height: 40px;
+                line-height: 50px;
                 margin-bottom: 16px;
             }
             &-text{

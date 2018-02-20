@@ -16,6 +16,8 @@ $('.write-section').enllax();
 $('.about-middle').enllax();
 $('.mvideo-section__mailing').enllax();
 
+// Маска для телефона
+$("#phone").mask("+7(999)999-99-99");
 
 //animated
 new WOW().init();

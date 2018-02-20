@@ -95,7 +95,9 @@ mixin footer-text()
 								|Подпишитесь на рассылку
 							form(action="/", class="footer__form")
 								input(type="email", placeholder="Почта", required, class="footer__subscribe-input")
-								input(type="submit", value="Подписаться", class="footer__subscribe-btn")
+								button(type="submit", class="footer__subscribe-btn") Подписаться
+								button(type="submit", class="footer__subscribe-btn--mobile")
+									img(src="img/svg-icons/footer-button-arrow.svg", alt="icon")
 					.offset-xl-2.offset-lg-1.col-xl-4.col-lg-4.col-md-12.col-sm-12.col-12
 						.footer__form__wrapper.footer__form__wrapper-social
 							p.footer__subscribe-text

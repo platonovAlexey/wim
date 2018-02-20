@@ -25,6 +25,7 @@
             color: #ffffff;
             transition: .7s;
             margin-left: 0;
+            height: 40px;
             &:focus{
                 color: #fff;
                 border-bottom: 1px solid #fff;
@@ -32,6 +33,16 @@
                 opacity: 1;
                 transition: .7s;
             }
+        }
+        &__label{
+            position: absolute;
+            pointer-events: none;
+            left: 15px;
+            top: 0;
+            line-height: 40px;
+            transition: .3s;
+            color: #fff;
+            opacity: .2;
         }
         &__btn{
             display: block;
@@ -70,4 +81,26 @@
     position: absolute;
     right: 0;
     top: -100%;
+}
+
+.write-form__input:focus~.write-form__label{
+    opacity: .2;
+}
+
+.write-form__input:focus~.write-form__label,
+.write-form__input:not(:focus):valid~.write-form__label {
+  top: -20px;
+  font-size: 12px;
+}
+
+#name-error, #phone-error, #email-error{
+    font-size: 12px;
+    line-height: 1.33;
+    color: #ff0625;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+.write-form__input.error{
+    border-bottom: 1px solid #ff001f;
 }

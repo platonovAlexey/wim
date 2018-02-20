@@ -549,10 +549,13 @@
 		margin-bottom: 0;
 	}
 	.write-form__input{
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		display: block;
 		float: none;
 		width: 100%;
+		// &-email{
+		// 	margin-bottom: 40px;
+		// }
 	}
 	.write-form__btn{
 		width: 100%;
@@ -684,6 +687,15 @@
 	#my-slider .sp-thumbnail-image-container{
 		width: 70px;
 		height: 70px;
+	}
+	#email-error, #name-error, #phone-error{
+		margin-bottom: 20px;
+	}
+	#email-error{
+		margin-bottom: 20px;
+	}
+	.write-form__input.error{
+		margin-bottom: 10px;
 	}
 }
 
@@ -873,6 +885,30 @@
 	}
 	.sp-slide{
 		width: 320px !important;
+	}
+	.footer__subscribe-input{
+		width: 230px;
+	}
+
+	.footer__subscribe-btn{
+		display: none;
+	}
+	.footer__subscribe-btn--mobile{
+		display: inline-block;
+		width: 48px;
+		height: 44px;
+		border-radius: 26px;
+		background-color: #181818;
+		border: solid 1px #a96fdc;
+		position: relative;
+		margin: 0 -20px;
+		top: 16px;
+		cursor: pointer;
+			img{
+				line-height: 44px;
+				display: block;
+				margin: 0 auto;
+			}
 	}
 	
 }

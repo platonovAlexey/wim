@@ -206,11 +206,14 @@ body
 						form(action="/", class="write-form")
 							.row
 								.col-xl-3.col-lg-3.col-md-4.col-sm-4.col-12
-									input(type="text", class="write-form__input", required, placeholder="Ваше имя")
+									input(type="text", class="write-form__input", name="name", required)
+									label(class="write-form__label") Ваше имя
 								.col-xl-3.col-lg-3.col-md-4.col-sm-4.col-12
-									input(type="text", class="write-form__input", required, placeholder="Телефон")
+									input(type="text", class="write-form__input", name="phone", id="phone" required)
+									label(class="write-form__label") Телефон
 								.col-xl-3.col-lg-3.col-md-4.col-sm-4.col-12
-									input(type="email", class="write-form__input", required, placeholder="Почта")
+									input(type="email", class="write-form__input write-form__input-email", name="email", required)
+									label(class="write-form__label") Почта
 							.row
 								.col-xl-2.col-lg-2.col-md-4.col-sm-6.col-12
 									input(type="submit", class="write-form__btn", value="Отправить")
